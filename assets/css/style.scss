@@ -525,7 +525,7 @@ body {
 
   &__list-part-title {
     position: absolute;
-    z-index: 10;
+    z-index: 100;
     max-width: 168px;
     min-width: auto;
     color: $font-color-black;
