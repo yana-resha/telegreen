@@ -184,9 +184,10 @@ body {
 
   .header__logo {
     display: block;
+    // height: 40px;
     svg {
-      width: 133px;
-      height: 46px;
+      // width: 133px;
+      height: 40px;
     }
   }
 
@@ -1678,9 +1679,21 @@ body {
     width: 75%;
   }
 
+  .project__swiper {
+    height: 800px;
+  }
+
+  .rewievs {
+    padding-bottom: 150px;
+  }
+
   .rewievs__list-part {
     width: 75%;
-}
+  }
+
+  .footer__logo-link {
+    width: 200px;
+  }
 
 }
 
@@ -2044,9 +2057,29 @@ body {
     width: 35px;
     height: 35px;
   }
+  .header__logo {
+    display: block;
+    // height: 40px;
+    svg {
+      // width: 133px;
+      height: 35px;
+    }
+  }
 }
 
 @media (max-width: 475px) {
+
+  .clients {
+    padding-bottom: 70px;
+  }
+
+  .project__swiper {
+    height: 700px;
+  }
+
+  .rewievs {
+    padding-top: 50px;
+  }
 
   .footer__container {
     display: grid;
