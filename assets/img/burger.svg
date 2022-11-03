@@ -1,0 +1,13 @@
+<svg id="Navigation" xmlns="http://www.w3.org/2000/svg" width="54" height="35" viewBox="0 0 54 35">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #44ac33;
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <path class="cls-1" d="M899,37h54v5.991H899V37Z" transform="translate(-899 -37)"/>
+  <path id="Rectangle_2_копия" data-name="Rectangle 2 копия" class="cls-1" d="M899,52h54v5.991H899V52Z" transform="translate(-899 -37)"/>
+  <path id="Rectangle_2_копия_2" data-name="Rectangle 2 копия 2" class="cls-1" d="M899,66h54v5.991H899V66Z" transform="translate(-899 -37)"/>
+</svg>

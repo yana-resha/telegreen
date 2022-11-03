@@ -22,10 +22,10 @@ li.forEach(el => {
       drop.classList.add('nav-dropdown-active');
       document.body.addEventListener('click', (e) => { 
         if (e.target !== btn) {
-          const activeDrop = Array.from($('.nav-dropdown-active'));
-          if (activeDrop) {
-            activeDrop.forEach(el => el.classList.remove('nav-dropdown-active'))
-          }
+          // const activeDrop = Array.from($('.nav-dropdown-active'));
+          // if (activeDrop) {
+            // activeDrop.forEach(el => el.classList.remove('nav-dropdown-active'))
+          // }
         }
       })
      }
