@@ -881,11 +881,11 @@ body {
   position: relative;
   min-height: 430px;
   margin-bottom: 25px;
-  transform-style: preserve-3d;
+  transform-style: preserve-3d; /* Safari and Chrome */ /* Firefox */ /* IE 9 */ /* Opera */
   transform: rotateY(0deg);
   transition: transform 0.5s ease-in-out;
 }
-.rewievs__list-part:hover .rewievs__list-part-img-block {
+.rewievs__list-part:hover .rewievs__list-part-img-block { /* Safari and Chrome */ /* Firefox */ /* IE 9 */ /* Opera */
   transform: rotateY(180deg);
 }
 .rewievs__list-part:hover .front {

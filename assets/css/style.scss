@@ -955,11 +955,19 @@ body {
     min-height: 430px;
     margin-bottom: 25px;
     transform-style: preserve-3d;
+    -webkit-transform:rotateY(0deg); /* Safari and Chrome */
+    -moz-transform:rotateY(0deg); /* Firefox */
+    -ms-transform:rotateY(0deg); /* IE 9 */
+    -o-transform:rotateY(0deg); /* Opera */
     transform: rotateY(0deg);
     transition: transform 0.5s ease-in-out;
   }
 
   &__list-part:hover .rewievs__list-part-img-block {
+    -webkit-transform:rotateY(180deg); /* Safari and Chrome */
+    -moz-transform:rotateY(180deg); /* Firefox */
+    -ms-transform:rotateY(180deg); /* IE 9 */
+    -o-transform:rotateY(180deg); /* Opera */
     transform: rotateY(180deg);
   }
 
