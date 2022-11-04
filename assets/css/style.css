@@ -436,7 +436,7 @@ body {
 }
 .system__list-part-title {
   position: absolute;
-  z-index: 10;
+  z-index: 100;
   max-width: 168px;
   min-width: auto;
   color: #000000;
@@ -755,6 +755,7 @@ body {
 }
 .project__swiper-slide {
   position: relative;
+  overflow: hidden;
 }
 .project__swiper-slide::after {
   position: absolute;
@@ -768,7 +769,7 @@ body {
   position: relative;
   display: flex;
   flex-direction: column;
-  padding-top: 50px;
+  padding-top: 100px;
   width: 100%;
   height: 100%;
   z-index: 100;
@@ -785,15 +786,24 @@ body {
   z-index: 150;
   transition: background-color 0.3s ease-in-out;
 }
-.project__swiper-slide-link:hover::after {
-  background: transparent;
-}
 .project__swiper-slide-link img {
   position: absolute;
   top: 0;
   width: 0;
   height: 100%;
   width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  transform: scale(1);
+  transition: transform 0.3s ease-in-out;
+}
+.project__swiper-slide-link:hover img { /* Safari and Chrome */ /* Firefox */ /* IE 9 */ /* Opera */
+  transform: scale(1.1);
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.project__swiper-slide-link:focus-visible img { /* Safari and Chrome */ /* Firefox */ /* IE 9 */ /* Opera */
+  transform: scale(1.1);
   -o-object-fit: cover;
      object-fit: cover;
 }
@@ -871,12 +881,46 @@ body {
   position: relative;
   min-height: 430px;
   margin-bottom: 25px;
+  transform-style: preserve-3d;
+  transform: rotateY(0deg);
+  transition: transform 0.5s ease-in-out;
+}
+.rewievs__list-part:hover .rewievs__list-part-img-block {
+  transform: rotateY(180deg);
+}
+.rewievs__list-part:hover .front {
+  opacity: 0;
+}
+.rewievs .side {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+.rewievs .front {
+  transform: translateZ(150px);
+  opacity: 1;
+  transition: 0.3s ease-in-out;
+}
+.rewievs .back {
+  transform: rotateY(180deg) translateZ(150px);
+  color: #fefefe;
+  padding: 10px;
+  font-size: 18px;
+  font-weight: 400;
+  background-color: #000000;
+  opacity: 0.5;
+  line-height: 25px;
+  display: flex;
+  align-items: center;
+}
+.rewievs .rewievs__list-part-text {
+  text-align: center;
 }
 .rewievs__list-part-background {
   position: absolute;
   width: 100%;
-  height: 90%;
-  top: 40%;
+  height: 80%;
+  top: 30%;
   left: -30%;
 }
 .rewievs__list-part-photo {
@@ -893,6 +937,7 @@ body {
 .rewievs__list-part {
   cursor: pointer;
   outline: none;
+  position: relative;
 }
 .rewievs__list-part:focus-visible .rewievs__list-part-photo {
   filter: sepia(50%);
@@ -1797,7 +1842,10 @@ body {
     padding-bottom: 70px;
   }
   .project__swiper {
-    height: 700px;
+    height: 600px;
+  }
+  .project__slide-title {
+    font-size: 20px;
   }
   .rewievs {
     padding-top: 50px;
