@@ -1,3 +1,5 @@
+@import './keyframes.scss';
+
 @font-face {
   font-family: 'monserrat';
   src: url('../fonts/Montserrat-Regular.woff') format('woff2'),
@@ -170,6 +172,7 @@ body {
 }
 
 
+
 .header {
   background-color: $background-header-grey;
   padding-top: 25px;
@@ -179,21 +182,32 @@ body {
   left: 0;
   width: 100%;
   z-index: 500;
-
-
-
+  animation: headerUnObserve 0.3s ease-in-out;
+  
   .header__logo {
-    display: block;
+    // display: block;
     // height: 40px;
-    svg {
-      // width: 133px;
+    // width: 200px;
+    overflow: hidden;
+    perspective: 1000px;
+    transform-style: preserve-3d;
+    display: flex;
+    
+    .square {
       height: 40px;
+    }
+
+    .letter {
+     width: 133px;
+     margin-left: 5px;
+     transform-style: preserve-3d;
+     transform: translateY(100%);
     }
   }
 
   .header__container {
     display: grid;
-    grid-template-columns: 12% 87%;
+    grid-template-columns: 18% 82%;
     align-items: center;
     justify-content: space-between;
   }
@@ -286,6 +300,53 @@ body {
       line-height: 32px;
     }
 }
+
+
+
+
+.fixed-header {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  background-color: rgba(18, 21, 17, 0.9);
+  animation: headerObserve 0.3s ease-in-out;
+}
+
+.header.header-on-top .header__logo .square {
+  height: 40px;
+  // animation: squareBig 3s ease-in-out;
+  animation-duration: 1.5s;
+  animation-iteration-count: 1;
+  animation-name: squareBig;
+  animation-timing-function: ease;
+}
+
+.header.header-on-top .header__logo .letter {
+  transform: translateY(100%);
+  animation-duration: 1s;
+  animation-iteration-count: 1;
+  animation-name: letterDown;
+  animation-timing-function: ease;
+}
+
+.header.fixed-header .header__logo .square {
+  height: 25px;
+  animation-duration: 2s;
+  animation-iteration-count: 1;
+  animation-name: squareSmall;
+  animation-timing-function: ease;
+  // animation: squareSmall 0.3s ease-in-out;
+}
+
+.header.fixed-header .header__logo .letter {
+  animation-duration: 2s;
+  animation-iteration-count: 1;
+  animation-name: letterUp;
+  animation-timing-function: ease;
+  transform: translateY(0%);
+  transform: scale(1);
+
+}
+
 
 
 // hero 
@@ -848,11 +909,6 @@ body {
       transition: background-color 0.3s ease-in-out;
     }
 
-    // &:hover::after {
-    //   background: transparent;
-    // }
-
-
 
     img {
       position: absolute;
@@ -1097,22 +1153,7 @@ body {
     border-bottom: 1px solid rgb(36, 40, 43);
   }
 
-  @keyframes fadeInFromNone {
-    0% {
-      display: none;
-      opacity: 0;
-    }
-  
-    1% {
-      display: block;
-      opacity: 0;
-    }
-  
-    100% {
-      display: block;
-      opacity: 1;
-    }
-  }
+
 
   &__list-part.list-close {
     display: none;

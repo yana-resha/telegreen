@@ -9,7 +9,6 @@ jQuery(document).ready(function($){
     const img = $(el).find('.rewievs__list-part-img-block')[0];
     const back = $(el).find('.rewievs__list-part-background')[0];
     img.style.zIndex = zIndex1;
-    console.log(back)
     back.style.zIndex = zIndex2;
   })
 });
