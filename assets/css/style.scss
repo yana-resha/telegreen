@@ -192,6 +192,9 @@ body {
     perspective: 1000px;
     transform-style: preserve-3d;
     display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: flex-end;
     
     .square {
       height: 40px;
@@ -200,6 +203,7 @@ body {
     .letter {
      width: 133px;
      margin-left: 5px;
+     height: 25px;
      transform-style: preserve-3d;
      transform: translateY(100%);
     }

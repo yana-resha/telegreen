@@ -404,6 +404,9 @@ body {
   perspective: 1000px;
   transform-style: preserve-3d;
   display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: flex-end;
 }
 .header .header__logo .square {
   height: 40px;
@@ -411,6 +414,7 @@ body {
 .header .header__logo .letter {
   width: 133px;
   margin-left: 5px;
+  height: 25px;
   transform-style: preserve-3d;
   transform: translateY(100%);
 }
