@@ -8,6 +8,7 @@
   <script src="./assets/js/swiper-bundle.min.js"></script>
   <script src="./assets/js/jquery.min.js"></script>
   <script src="./assets/js/jquery-ui.min.js"></script>
+  <!-- <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script> -->
   <link rel="stylesheet" href="./assets/css/font-awesome.css">
   <link rel="stylesheet" href="./assets/css/style.css">
   <title>Платформа для продажи билетов и ....</title>
@@ -126,11 +127,15 @@
   </article>
   <section class="advantages">
     <div class="container advantages__container">
-      <h1 class="advantages__title">НАШИ ПРЕИМУЩЕСТВА</h1>
-      <p class="advantages__list-title">
-        В компанию могут обратиться организаторы мероприятий – руководители театров, музеев, выставочных залов, концертных площадок или спортивных комплексов. Помимо предложения интересного продукта, необходимо подготовить площадку для размещения рекламной информации о готовящемся событии.<br>
-        В отличие от других билетных систем мы предоставляем:
-      </p>
+      <h1 class="slide-in-demo advantages__title">НАШИ ПРЕИМУЩЕСТВА</h1>
+        <p class="advantages__list-title">
+          <span>В компанию могут обратиться</span> 
+          <span>организаторы мероприятий</span> 
+          <span> – руководители театров, музеев, выставочных залов,</span>
+          <span>концертных площадок или</span> <span>спортивных комплексов.</span> 
+          <span>Помимо предложения интересного продукта, необходимо подготовить площадку для размещения рекламной информации о готовящемся событии.</span><br>
+          <span>В отличие от других билетных систем мы предоставляем:</span>
+        </p>
       <ul class="advantages__list list-no-marker">
         <li class="advantages__list-part">
           <div class="advantages__list-part-content">
@@ -472,15 +477,29 @@
         </li>
       </ul>
       <p class="advantages__description">
-        В компании TeleGreen доступна организация продажи билетов по выгодному предложению. Важно проработать программу и разместить подробную информацию об организаторе и содержании события. Благодаря автоматизации потенциальные клиенты могут самостоятельно выбирать билеты.
+        <span>В компании TeleGreen 
+        доступна организация продажи билетов
+        по выгодному предложению.</span> 
+        <span>Важно проработать программу </span>
+        <span>и разместить подробную информацию об организаторе</span>
+        <span>и содержании события.</span>
+        <span>Благодаря автоматизации </span>
+        <span>потенциальные клиенты </span>
+        <span>могут самостоятельно </span>
+        <span>выбирать билеты.</span>
       </p>
     </div>
   </section>
-  <section class="system">
+  <section class="system scrollme">
     <div class="container system__container">
       <h1 class="system__title">НАША БИЛЕТНАЯ СИСТЕМА</h1>
       <ul class="system__list list-no-marker">
-        <li class="system__list-part">
+        <li class="system__list-part animateme"
+        data-when="span"
+        data-from="0"
+        data-to="1"
+        data-easing="easeinout"
+        data-scalex="1.1">
           <a  href="" class="system__list-part link">
             <div class="system__list-part-img-container">
               <img src="./assets/img/list-for-musey.jpg" alt="фоновое изображение части списка">
@@ -488,7 +507,12 @@
           <div class="system__list-part-title title-left title-top">ДЛЯ МУЗЕЕВ</div>
           </a>
         </li>
-        <li class="system__list-part">
+        <li class="system__list-part animateme"
+        data-when="span"
+        data-from="0"
+        data-to="0"
+        data-easing="easeinout"
+        data-scalex="1.1">
           <a  href="" class="system__list-part link">
             <div class="system__list-part-img-container">
               <img src="./assets/img/list-for-theatre.jpg" alt="фоновое изображение части списка">
@@ -496,7 +520,12 @@
             <div class="system__list-part-title title-left title-bottom">ДЛЯ ТЕАТРОВ</div>
           </a>
         </li>
-        <li class="system__list-part">
+        <li class="system__list-part animateme"
+        data-when="span"
+        data-from="0"
+        data-to="1"
+        data-easing="easeinout"
+        data-scalex="1.1">
           <a  href="" class="system__list-part link">
             <div class="system__list-part-img-container">
               <img src="./assets/img/list-for-concert.jpg" alt="фоновое изображение части списка">
@@ -504,7 +533,12 @@
             <div class="system__list-part-title title-rigth title-top">ДЛЯ КОНЦЕРТОВ</div>
           </a>
         </li>
-        <li class="system__list-part">
+        <li class="system__list-part animateme"
+        data-when="span"
+        data-from="0"
+        data-to="1"
+        data-easing="easeinout"
+        data-scalex="1.1">
           <a  href="" class="system__list-part link">
             <div class="system__list-part-img-container">
               <img src="./assets/img/list-for-kinotheatre.jpg" alt="фоновое изображение части списка">
@@ -512,7 +546,12 @@
             <div class="system__list-part-title title-rigth title-top">ДЛЯ КИНОТЕАТРОВ</div>
           </a>
         </li>
-        <li class="system__list-part">
+        <li class="system__list-part animateme"
+        data-when="span"
+        data-from="0"
+        data-to="1"
+        data-easing="easeinout"
+        data-scalex="1.1">
           <a  href="" class="system__list-part link">
             <div class="system__list-part-img-container">
               <img src="./assets/img/list-for-events.jpg" alt="фоновое изображение части списка">
@@ -556,11 +595,16 @@
       </ul>
     </div>
   </section>
-  <section class="tarifs">
+  <section class="tarifs scrollme">
     <div class="container">
       <h1 class="tarifs__title">КОМФОРТНЫЕ ТАРИФЫ</h1>
       <ul class="tarifs__list list-no-marker">
-        <li class="tarifs__list-part">
+        <li class="tarifs__list-part animateme"
+        data-when="span"
+        data-from="0"
+        data-to="1"
+        data-easing="easeinout"
+        data-scalex="1.1">
           <div class="tarifs__list-part-content">
             <div class="tarifs__list-part-title">
               SMART
@@ -595,7 +639,12 @@
             </button>
           </div>
         </li>
-        <li class="tarifs__list-part">
+        <li class="tarifs__list-part animateme"
+        data-when="span"
+        data-from="0"
+        data-to="1"
+        data-easing="easeinout"
+        data-scalex="1.1">
           <div class="tarifs__list-part-content">
             <div class="tarifs__list-part-title">
               STANDART
@@ -628,7 +677,12 @@
             </button>
           </div>
         </li>
-        <li class="tarifs__list-part">
+        <li class="tarifs__list-part animateme"
+        data-when="span"
+        data-from="0"
+        data-to="1"
+        data-easing="easeinout"
+        data-scalex="1.1">
           <div class="tarifs__list-part-content">
             <div class="tarifs__list-part-title">
               ПУШКИНСКАЯ КАРТА
@@ -960,7 +1014,8 @@
         Внимание!
       </div>
       <div class="important__description">
-        Современная билетная система требует ответственного подхода и адаптации под каждого организатора. Подобное автоматизированное решение значительно увеличивает продажи. При соблюдении всех правил промоушена и рекламной отдачи обеспечивается заполняемость залов до 95%, что является хорошим показателем для любого культурного учреждения. Закажите сервис для продажи билетов в Москве и других городах России. Действует предложение по индивидуальной разработке программного обеспечения, технических средств для удобной покупки и проведения расчетов. 
+        Современная билетная система
+        требует ответственного подхода и адаптации под каждого организатора. Подобное автоматизированное решение значительно увеличивает продажи. При соблюдении всех правил промоушена и рекламной отдачи обеспечивается заполняемость залов до 95%, что является хорошим показателем для любого культурного учреждения. Закажите сервис для продажи билетов в Москве и других городах России. Действует предложение по индивидуальной разработке программного обеспечения, технических средств для удобной покупки и проведения расчетов. 
         Для уточнения информации о сотрудничестве позвоните нашему менеджеру по телефону +7 (495) 729-9842 
         или заполните форму обратной связи на сайте
       </div>
@@ -1151,6 +1206,8 @@
   </footer>
 </body>
 <script src="./assets/js/dropdown-nav.js"></script>
+<script src="./assets/js/jScrollability.min.js"></script>
+<script src="./assets/js/animation-text.js"></script>
 <script src="./assets/js/system-list.js"></script>
 <script src="./assets/js/project-swiper.js"></script>
 <script src="./assets/js/reviews-list.js"></script>
