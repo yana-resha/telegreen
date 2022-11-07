@@ -1,5 +1,6 @@
 const telegreen = document.querySelector('.hero')
 const header = document.querySelector('.header');
+const headerRelative = document.querySelector('.header__relative')
 
 document.addEventListener('DOMContentLoaded', () => {
   const createObserver = () => {
@@ -9,11 +10,12 @@ document.addEventListener('DOMContentLoaded', () => {
         entries.forEach((entry) => {
           // если целевой элемент находится в зоне видимости
           if (entry.isIntersecting) {
-   
+            headerRelative.classList.remove('padding-un')
             header.classList.remove('fixed-header')
           } else {
             header.classList.add('fixed-header')
             header.classList.add('header-on-top')
+            headerRelative.classList.add('padding-un')
           }
         });
       },

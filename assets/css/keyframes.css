@@ -1,69 +1,117 @@
 @-webkit-keyframes headerUnObserve {
   0% {
     background-color: rgba(18, 21, 17, 0.9);
-    padding-top: 10px;
-    padding-bottom: 10px;
   }
   1% {
     background-color: rgba(18, 21, 17, 0.488);
-    padding-top: 20px;
-    padding-bottom: 20px;
   }
   100% {
     background-color: rgba(18, 21, 17, 0.388);
-    padding-top: 25px;
-    padding-bottom: 25px;
   }
 }
 @keyframes headerUnObserve {
   0% {
     background-color: rgba(18, 21, 17, 0.9);
-    padding-top: 10px;
-    padding-bottom: 10px;
   }
   1% {
     background-color: rgba(18, 21, 17, 0.488);
-    padding-top: 20px;
-    padding-bottom: 20px;
   }
   100% {
     background-color: rgba(18, 21, 17, 0.388);
-    padding-top: 25px;
-    padding-bottom: 25px;
   }
 }
 @-webkit-keyframes headerObserve {
   0% {
     background-color: rgba(18, 21, 17, 0.388);
-    padding-top: 25px;
-    padding-bottom: 25px;
   }
   1% {
     background-color: rgba(18, 21, 17, 0.488);
-    padding-top: 20px;
-    padding-bottom: 20px;
   }
   100% {
     background-color: rgba(18, 21, 17, 0.9);
-    padding-top: 15px;
-    padding-bottom: 15px;
   }
 }
 @keyframes headerObserve {
   0% {
     background-color: rgba(18, 21, 17, 0.388);
+  }
+  1% {
+    background-color: rgba(18, 21, 17, 0.488);
+  }
+  100% {
+    background-color: rgba(18, 21, 17, 0.9);
+  }
+}
+@-webkit-keyframes paddingUn {
+  0% {
     padding-top: 25px;
     padding-bottom: 25px;
   }
   1% {
-    background-color: rgba(18, 21, 17, 0.488);
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  50% {
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+  100% {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+}
+@keyframes paddingUn {
+  0% {
+    padding-top: 25px;
+    padding-bottom: 25px;
+  }
+  1% {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  50% {
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+  100% {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+}
+@-webkit-keyframes paddingOn {
+  0% {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  1% {
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+  50% {
     padding-top: 20px;
     padding-bottom: 20px;
   }
   100% {
-    background-color: rgba(18, 21, 17, 0.9);
+    padding-top: 25px;
+    padding-bottom: 25px;
+  }
+}
+@keyframes paddingOn {
+  0% {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  1% {
     padding-top: 15px;
     padding-bottom: 15px;
+  }
+  50% {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  100% {
+    padding-top: 25px;
+    padding-bottom: 25px;
   }
 }
 @-webkit-keyframes squareSmall {
