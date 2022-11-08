@@ -3088,6 +3088,12 @@ body {
   .hero__title {
     font-size: 25px;
   }
+
+
+  .system__list li {
+    min-height: 160px;
+}
+  
 }
 
 @media (max-width: 396px) {
@@ -3133,7 +3139,7 @@ body {
 
 }
 
-@media (max-width: 390px) { 
+@media (max-width: 391px) { 
 
     .container {
     padding: 0 15px;
@@ -3217,6 +3223,7 @@ body {
     bottom: -30px;
   }
 
+
   .system__list li {
     min-height: 170px;
   }
@@ -3250,7 +3257,7 @@ body {
 }
 
 
-@media (max-width: 350px) {
+@media (max-width: 330px) {
 
   body {
     min-width: 350px;

@@ -9,12 +9,12 @@ document.addEventListener('DOMContentLoaded', () => {
         entries.forEach((entry) => {
           // если целевой элемент находится в зоне видимости
           if (entry.isIntersecting) {
-            entry.target.classList.remove('scaleUpOut')
-            entry.target.classList.add('scaleUpIn')
+            entry.target.classList.remove('fromLeftOut')
+            entry.target.classList.add('fromLeftIn')
            
           } else {
-            entry.target.classList.add('scaleUpOut')
-            entry.target.classList.remove('scaleUpIn')
+            entry.target.classList.add('fromLeftOut')
+            entry.target.classList.remove('fromLefIn')
           }
         });
       },

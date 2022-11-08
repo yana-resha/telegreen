@@ -3086,6 +3086,9 @@ body {
   .hero__title {
     font-size: 25px;
   }
+  .system__list li {
+    min-height: 160px;
+  }
 }
 @media (max-width: 396px) {
   .advantages {
@@ -3116,7 +3119,7 @@ body {
     width: 100%;
   }
 }
-@media (max-width: 390px) {
+@media (max-width: 391px) {
   .container {
     padding: 0 15px;
   }
@@ -3206,7 +3209,7 @@ body {
     font-size: 16px;
   }
 }
-@media (max-width: 350px) {
+@media (max-width: 330px) {
   body {
     min-width: 350px;
     overflow-x: scroll;
