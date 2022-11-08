@@ -13,6 +13,17 @@ document.addEventListener('DOMContentLoaded', () => {
       const back = $(el).find('.rewievs__list-part-background')[0];
       img.style.zIndex = zIndex1;
       back.style.zIndex = zIndex2;
-    })
+      
+        el.addEventListener('click', (event) => {
+        
+          el.classList.toggle('open')
+          // el.classList.add('close')
+        })
+
+      })
+
+      
+
+  
   });
 })

@@ -22,7 +22,7 @@ document.addEventListener('DOMContentLoaded', () => {
       {
         // процент пересечения целевого элемента с областью просмотра
         // 10%
-        threshold: 0.5,
+        threshold: 0.9,
       }
     );
   
