@@ -326,6 +326,28 @@
     transform: translateY(100%);
   }
 }
+@-webkit-keyframes bounce {
+  0%, 50%, 100% {
+    transform: rotate(0deg);
+  }
+  10%, 30% {
+    transform: rotate(-10deg);
+  }
+  20%, 40% {
+    transform: rotate(10deg);
+  }
+}
+@keyframes bounce {
+  0%, 50%, 100% {
+    transform: rotate(0deg);
+  }
+  10%, 30% {
+    transform: rotate(-10deg);
+  }
+  20%, 40% {
+    transform: rotate(10deg);
+  }
+}
 @font-face {
   font-family: "monserrat";
   src: url("../fonts/Montserrat-Regular.woff") format("woff2"), url("../fonts/Montserrat-Regular.woff2") format("woff");
@@ -902,13 +924,12 @@ body {
   transition: filter 0.3s ease-in-out;
 }
 .system__list-part:focus-visible, .system__list-part:hover {
-  filter: grayscale(70%);
-}
-.system__list-part:active {
-  filter: grayscale(100%);
+  -webkit-animation: 1.2s ease-in-out 0s normal none infinite running bounce;
+          animation: 1.2s ease-in-out 0s normal none infinite running bounce;
 }
 .system__list-part-img-container {
   height: 100%;
+  background-color: white;
 }
 .system__list-part-img-container img {
   max-width: 100%;
@@ -1842,7 +1863,7 @@ body {
   .system .system__list li {
     width: 30%;
   }
-  .system .system__list-part-img-container img {
+  .system .system__list-part-img-container svg {
     position: absolute;
     top: 0;
     left: 0;

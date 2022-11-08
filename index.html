@@ -125,10 +125,10 @@
         <div class="hero__top-description-border"></div>
         Современная платформа продажи билетов
         <a href="index.html" class="hero__green-text link">
-          <span style="color: #484442;">
+          <span style="color: rgb(72, 68, 66); text-shadow: rgba(255,255,255,0.5) 0px 3px 3px;">
             Tele
           </span>
-          <span>
+          <span style="text-shadow: rgba(72,68,66,0.5) 0px 3px 3px;">
             Green
           </span>
         </a>
@@ -448,8 +448,6 @@
          </g>
          <rect x="442.32" y="412.52" class="st0" width="15.51" height="15.51"/>
          </svg>
-         
-                   
           </div>
         </li>
         <li class="advantages__list-part reverse">
@@ -1098,9 +1096,14 @@
       <form class="important__form">
         <legend class="important__form-legend-title">Заказать обратный звонок</legend>
         <input class="important__form-input input name" type="text" required name="name" aria-label="введите имя" placeholder="имя*">
+        <input class="important__form-input input org" type="text" required name="name" aria-label="введите имя" placeholder="название организации*">
         <input type="tel" required name="phone" class="important__form-input input tel" aria-label="введите номер телефона" data-validate-field="tel" data-validate-rules="phone" placeholder="телефон*">
         <input type="text" required name="email" class="important__form-input email" aria-label="введите email" data-validate-field="tel" data-validate-rules="phone" placeholder="e-mail*">
         <textarea required  class="important__form-input input textaria" placeholder="Укажите описание своего проекта*"></textarea>
+        <!-- добавление элемента div -->
+        <div class="g-recaptcha" data-sitekey="6Lf7ZOwiAAAAAACjvs-Qqd4D3PF-WlsTZU-sAv1v"></div>
+        <!-- элемент для вывода ошибок -->
+        <div class="text-danger" id="recaptchaError"></div>
         <button class="important__form-input-btn-submit" type="submit">Отправить</button>
       </form>
     </div>
@@ -1298,6 +1301,7 @@
 <script src="./assets/js/blog-list.js"></script>
 <script src="./assets/js/burger.js"></script>
 <script src="./assets/js/observer.js"></script>
+<script src='https://www.google.com/recaptcha/api.js'></script>
 <!-- <script src="./assets/js/index.js"></script>
 <script src="./assets/js/dropdown-contact.js"></script>
 
