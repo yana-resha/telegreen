@@ -3087,7 +3087,8 @@ body {
     font-size: 25px;
   }
   .system__list li {
-    min-height: 160px;
+    min-height: 170px;
+    max-height: 170px;
   }
 }
 @media (max-width: 396px) {
