@@ -27,11 +27,18 @@ document.addEventListener('DOMContentLoaded', () => {
   
     // находим все секции
     // начинаем за ними наблюдать
-    
+
+
       observer.observe(systemTitle);
 
+    
+
   };
-  createObserver();
+
+  if (systemTitle) {
+
+    createObserver();
+  }
 
   const createObserverClient = () => {
     // создаем экземпляр IntersectionObserver
@@ -68,6 +75,8 @@ document.addEventListener('DOMContentLoaded', () => {
       observer.observe(clientSection);
   };
 
-  createObserverClient();
+  if (clientSection) {
 
+    createObserverClient();
+  }
 })

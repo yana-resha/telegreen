@@ -1,0 +1,11 @@
+@mixin block-title {
+  
+  font-size: 26px;
+  font-weight: 900;
+  padding-left: calc(6% + 30px);
+ 
+   @media (max-width: 480px) {
+     
+   }
+ 
+ }

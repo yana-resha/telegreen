@@ -1,0 +1,81 @@
+@import './keyframes.scss';
+@import './sales.scss';
+@import './style.scss';
+@import './mixin.scss';
+
+.about {
+  padding-top: 70px;
+  padding-bottom: 100px;
+  background-image: url('../img/about_banner.png');
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: 100% 960px;
+  background-color: #313130;
+}
+
+.about__desc-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  margin-bottom: 65px;
+}
+
+.about__desc-metka {
+  background-color: $font-color-green;
+  width: 100%;
+  height: 75px;
+  margin-top: 10px;
+  margin-right: 30px;
+  width: 6%;
+}
+
+.about__desc {
+  color: $font-color-white;
+  font-size: 20px;
+  line-height: 32px;
+  width: 75%;
+
+}
+
+.about__values-container {
+  margin-bottom: 70px;
+}
+
+.about__values-title {
+  @include block-title ();
+  color: $font-color-white;
+  margin-bottom: 20px;
+}
+
+.about__value-list-part-text {
+  color: $font-color-white;
+  font-size: 20px;
+  line-height: 27px;
+  width: 80%;
+}
+
+.about__value-list-part:not(:last-child) {
+  margin-bottom: 15px;
+}
+
+.about__value-list-part {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+}
+
+.list-marker {
+  min-height: 40px;
+  width: 5px;
+  background-color: $font-color-green;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  margin-right: calc(6% + 25px);
+}
+
+.about__advantages-title {
+  @include block-title ();
+  color: $font-color-white;
+  margin-bottom: 40px;
+}

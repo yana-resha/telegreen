@@ -30,6 +30,13 @@ document.addEventListener('DOMContentLoaded', () => {
     // начинаем за ними наблюдать
      observer.observe(telegreen);
   };
+
+  if (telegreen) {
+    createObserver();
+  } else {
+    header.classList.add('fixed-header')
+    header.classList.add('header-on-top')
+    headerRelative.classList.add('padding-un')
+  }
   
-  createObserver();
 })
