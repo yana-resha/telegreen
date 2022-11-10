@@ -2755,9 +2755,6 @@ body {
   .system__list li {
     min-height: 250px;
   }
-  .system__list-part {
-    overflow: visible;
-  }
   .system__list-part-title {
     font-size: 12px;
     max-width: 110px;
