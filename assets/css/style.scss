@@ -799,7 +799,21 @@ body {
   }
 
 
+  &__list-part:focus-visible .system__list-part-img-container,
+  &__list-part:hover {
+  }
 
+  .x:focus-visible .system__list-part-img-container,
+  .x:hover {
+    animation: bounseLeft 1.5s ease infinite;
+  }
+
+  .y:focus-visible .system__list-part-img-container,
+  .y:hover {
+    animation: bounce3 1.5s ease infinite;
+  }
+
+  
 
 
   &__list-part:focus-visible .system__list-part-img-container,
