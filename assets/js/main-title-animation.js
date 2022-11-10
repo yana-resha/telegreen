@@ -17,9 +17,10 @@ jQuery(document).ready(function($){
     }
 
     if (title) {
-        
-      title.classList.remove('scaleUpOut');
-      title.classList.add('scaleUpIn');
+      // scaleUpOut
+      // scaleUpIn
+      title.classList.remove('fromTopOut');
+      title.classList.add('fromTopIn');
     }
 
     if (bottomDesc) {
