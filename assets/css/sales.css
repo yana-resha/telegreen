@@ -4057,9 +4057,9 @@ body {
     margin-bottom: 10px;
   }
 }
-@media (max-width: 330px) {
-  body {
-    min-width: 350px;
-    overflow-x: scroll;
+@media (max-width: 320px) {
+  .sales__block-list-content-block {
+    padding-left: 5px;
+    width: 55%;
   }
 }/*# sourceMappingURL=sales.css.map */
