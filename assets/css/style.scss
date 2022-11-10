@@ -792,32 +792,26 @@ body {
     overflow: hidden;
     box-shadow: 1px 16px 18px 4px rgba(2, 2, 2, 0.26);
     filter: none;
-    animation: 0.5s ease-in-out scaleDown;
+    background-color: white;
+    // animation: 0.5s ease-in-out scaleDown;
     transition: filter 0.3s ease-in-out;
     
   }
 
-  &__list-part:focus-visible,
-  &__list-part:hover {
-    transform: scale(1.1);
-    animation: 0.5s ease-in-out scaleUp;
-   
-  }
+
+
+
 
   &__list-part:focus-visible .system__list-part-img-container,
   &__list-part:hover .system__list-part-img-container {
     
     filter: grayscale(0);
-   
-  }
-
-  &__list-part:active  {
-    transform: scale(1);
-    animation: 0.5s ease-in-out scaleDown;
+    transform: scale(1.1);
   }
 
   &__list-part:active .system__list-part-img-container{
     filter: grayscale(1);
+    transform: scale(0.9);
   }
 
   &__list-part-img-container {
@@ -825,7 +819,7 @@ body {
     height: 100%;
     background-color: white;
     filter: grayscale(1);
-    transition: filter 0.5s ease-in-out;
+    transition: filter 0.5s ease-in-out, transform 0.5s ease-in-out;
     img {
       max-width: 100%;
       height: 100%;
@@ -2399,7 +2393,7 @@ body {
  @media (max-width: 650px) {
 
   .hero__title {
-    font-size: 25px;
+    font-size: 30px;
     line-height: 30px;
     margin-bottom: 30px;
   }
@@ -3134,7 +3128,7 @@ body {
   }
 
   .hero__title {
-    font-size: 20px;
+    font-size: 25px;
   }
 
 
