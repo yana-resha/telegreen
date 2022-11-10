@@ -3964,6 +3964,11 @@ body {
   box-sizing: border-box;
 }
 
+body {
+  margin: 0;
+  padding: 0;
+}
+
 .sales__hero {
   background-image: url("../img/sales_hero.png");
   background-repeat: no-repeat;
@@ -7445,14 +7450,22 @@ body {
     overflow-x: scroll;
   }
 }
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
 .about {
   padding-top: 70px;
-  padding-bottom: 100px;
+  padding-bottom: 40px;
   background-image: url("../img/about_banner.png");
   background-repeat: no-repeat;
-  background-position: top;
-  background-size: 100% 960px;
-  background-color: #313130;
+  background-position: bottom;
+  background-size: cover;
 }
 
 .about__desc-container {
@@ -7521,5 +7534,76 @@ body {
   font-weight: 900;
   padding-left: calc(6% + 30px);
   color: #fefefe;
-  margin-bottom: 40px;
+}
+.about-bottom {
+  background-color: #313130;
+}
+
+.about-bottom__container {
+  max-width: 1500px;
+  min-width: auto;
+  margin: 0 auto;
+  position: relative;
+  padding-left: 170px;
+  padding-right: 170px;
+}
+
+.about__advantages-swiper-slide {
+  background-color: white;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.swiper-slide-content-title {
+  font-size: 18px;
+  font-weight: 900;
+  color: #44ac33;
+  padding-bottom: 5px;
+  border-bottom: 1px solid #3c434d;
+  text-align: center;
+  width: 95%;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+}
+
+.swiper-slide-content-desc {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 18px;
+  color: #3f4650;
+  width: 90%;
+}
+
+.swiper-slide-content {
+  padding-bottom: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+}
+
+.swiper-slide-img-block {
+  height: 95px;
+  position: relative;
+  background-color: #797979;
+}
+
+.slider-square {
+  position: absolute;
+  left: 10%;
+  bottom: 50%;
+  height: 70%;
+  width: 20%;
+  background-color: #afafaf;
+}
+
+.swiper-slide {
+  flex-shrink: 0;
+  width: 100%;
+  height: auto;
+  position: relative;
+  transition-property: transform;
 }/*# sourceMappingURL=about-company.css.map */

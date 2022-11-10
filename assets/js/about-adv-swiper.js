@@ -16,19 +16,19 @@ var swiper = new Swiper(".about__advantages-swiper", {
   breakpoints: {
     1185: {
       slidesPerView: 4,
-      spaceBetween: 0,
+      spaceBetween: 30,
       slidesPerGroup: 4,
     },
 
     900: {
         slidesPerView: 3,
-        spaceBetween: 0,
+        spaceBetween: 30,
         slidesPerGroup: 3,
     },
 
     577: {
       slidesPerView: 2,
-      spaceBetween: 0,
+      spaceBetween: 30,
       slidesPerGroup: 2,
     },
 

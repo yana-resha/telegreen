@@ -3674,6 +3674,11 @@ body {
   box-sizing: border-box;
 }
 
+body {
+  margin: 0;
+  padding: 0;
+}
+
 .sales__hero {
   background-image: url("../img/sales_hero.png");
   background-repeat: no-repeat;
