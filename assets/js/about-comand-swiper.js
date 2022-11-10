@@ -1,6 +1,6 @@
-var swiper = new Swiper(".about__advantages-swiper", {
+var swiper = new Swiper(".about__comand-swiper", {
   slidesPerView: 4,
-  spaceBetween: 20,
+  spaceBetween: 30,
   slidesPerGroup: 4,
   // loop: true,
   // loopFillGroupWithBlank: true,
@@ -9,14 +9,14 @@ var swiper = new Swiper(".about__advantages-swiper", {
   //   clickable: true,
   // },
   navigation: {
-    nextEl: ".about__adv-swiper-button-next",
-    prevEl: ".about__adv-swiper-button-prev",
+    nextEl: ".about__comand-button-next",
+    prevEl: ".about__comand-button-prev",
   },
 
   breakpoints: {
     1185: {
       slidesPerView: 4,
-      spaceBetween: 20,
+      spaceBetween: 30,
       slidesPerGroup: 4,
     },
 
