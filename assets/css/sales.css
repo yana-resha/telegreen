@@ -354,26 +354,48 @@
     transform: translateY(100%);
   }
 }
-@-webkit-keyframes bounce {
-  0%, 50%, 100% {
-    transform: rotate(0deg);
+@-webkit-keyframes bounseLeft {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateX(0);
   }
-  10%, 30% {
-    transform: rotate(-2deg);
+  40% {
+    transform: translateX(-30px);
   }
-  20%, 40% {
-    transform: rotate(2deg);
+  60% {
+    transform: translateX(-15px);
   }
 }
-@keyframes bounce {
-  0%, 50%, 100% {
-    transform: rotate(0deg);
+@keyframes bounseLeft {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateX(0);
   }
-  10%, 30% {
-    transform: rotate(-2deg);
+  40% {
+    transform: translateX(-30px);
   }
-  20%, 40% {
-    transform: rotate(2deg);
+  60% {
+    transform: translateX(-15px);
+  }
+}
+@-webkit-keyframes bounce3 {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-30px);
+  }
+  60% {
+    transform: translateY(-15px);
+  }
+}
+@keyframes bounce3 {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-30px);
+  }
+  60% {
+    transform: translateY(-15px);
   }
 }
 @-webkit-keyframes cc {
@@ -608,6 +630,11 @@
   font-weight: 500;
   font-style: normal;
 }
+.ff {
+  width: 1000px;
+  height: 100px;
+}
+
 .fromTopIn {
   transition: transform 1s ease, opacity 1s ease;
   transform: translate(0, 0);
@@ -664,7 +691,7 @@
 
 .scaleUpOut {
   transition: transform 1s ease, opacity 1s ease;
-  transform: scale(1.3, 1.3);
+  transform: scale(1.1, 1.1);
   opacity: 0;
 }
 
@@ -1223,35 +1250,29 @@ body {
   overflow: hidden;
   box-shadow: 1px 16px 18px 4px rgba(2, 2, 2, 0.26);
   filter: none;
-  -webkit-animation: 0.5s ease-in-out scaleDown;
-          animation: 0.5s ease-in-out scaleDown;
   transition: filter 0.3s ease-in-out;
 }
-.system__list-part:focus-visible, .system__list-part:hover {
-  transform: scale(1.1);
-  -webkit-animation: 0.5s ease-in-out scaleUp;
-          animation: 0.5s ease-in-out scaleUp;
+.system .x:focus-visible,
+.system .x:hover {
+  -webkit-animation: bounseLeft 1.5s ease infinite;
+          animation: bounseLeft 1.5s ease infinite;
+}
+.system .y:focus-visible,
+.system .y:hover {
+  -webkit-animation: bounce3 1.5s ease infinite;
+          animation: bounce3 1.5s ease infinite;
 }
 .system__list-part:focus-visible .system__list-part-img-container, .system__list-part:hover .system__list-part-img-container {
   filter: grayscale(0);
-}
-.system__list-part:active {
-  transform: scale(1);
-  -webkit-animation: 0.5s ease-in-out scaleDown;
-          animation: 0.5s ease-in-out scaleDown;
 }
 .system__list-part:active .system__list-part-img-container {
   filter: grayscale(1);
 }
 .system__list-part-img-container {
   height: 100%;
-  background-color: white;
-  filter: grayscale(1);
-  transition: filter 0.5s ease-in-out;
-}
-.system__list-part-img-container img {
-  max-width: 100%;
-  height: 100%;
+  position: relative;
+  filter: grayscale(0);
+  transition: filter 0.5s ease-in-out, transform 0.5s ease-in-out;
 }
 .system__list-part-title {
   position: absolute;
@@ -2764,9 +2785,6 @@ body {
   .system__list li {
     min-height: 250px;
   }
-  .system__list-part {
-    overflow: visible;
-  }
   .system__list-part-title {
     font-size: 12px;
     max-width: 110px;
@@ -2873,17 +2891,11 @@ body {
   .hero {
     min-height: 700px;
   }
-  .hero__title {
-    margin-bottom: 20px;
-  }
   .hero__top-description {
     font-size: 14px;
   }
   .hero__green-text {
     font-size: 18px;
-  }
-  .hero__title {
-    font-size: 30px;
   }
   .hero__bottom-description {
     font-size: 14px;
@@ -3304,7 +3316,7 @@ body {
     min-height: 250px;
   }
   .hero__title {
-    font-size: 25px;
+    font-size: 20px;
     margin-bottom: 20px;
   }
   .advantages__title {
@@ -3558,15 +3570,26 @@ body {
     transform: translateY(100%);
   }
 }
-@keyframes bounce {
-  0%, 50%, 100% {
-    transform: rotate(0deg);
+@keyframes bounseLeft {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateX(0);
   }
-  10%, 30% {
-    transform: rotate(-2deg);
+  40% {
+    transform: translateX(-30px);
   }
-  20%, 40% {
-    transform: rotate(2deg);
+  60% {
+    transform: translateX(-15px);
+  }
+}
+@keyframes bounce3 {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-30px);
+  }
+  60% {
+    transform: translateY(-15px);
   }
 }
 @keyframes cc {

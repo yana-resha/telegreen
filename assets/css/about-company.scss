@@ -145,18 +145,34 @@ body {
 }
 
 .swiper-slide-img-block {
-  height: 95px;
+  max-height: 95px;
+  min-height: 95px;
   position: relative;
   background-color: #797979;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  svg {
+    position: absolute;
+    left: calc(50% - 20%);
+    top: 5%;
+    height: 90%;
+    width: 40%;
+    z-index: 100;
+  }
 }
+
 
 .slider-square {
   position: absolute;
   left: 10%;
   bottom: 50%;
   height: 70%;
-  width: 20%;
+  width: 25%;
   background-color: #afafaf;
+  z-index: 1;
 }
 
 .swiper-slide {
@@ -165,4 +181,62 @@ body {
   height: auto;
   position: relative;
   transition-property: transform;
+}
+
+.swiper-button-next, .swiper-button-prev {
+  position: absolute;
+  top: 50%;
+  width: calc(var(--swiper-navigation-size)/ 44 * 27);
+  height: var(--swiper-navigation-size);
+  margin-top: calc(0px - (var(--swiper-navigation-size)/ 2));
+  z-index: 10;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--swiper-navigation-color,var(--swiper-theme-color));
+}
+
+.about__adv-swiper-button-next,
+.about__adv-swiper-button-prev {
+  width: 65px!important;
+  height: 65px!important;
+  background-color: #363635;
+  border-radius: 50%;
+  border: 2px solid rgba($font-color-white,0.1);
+  color: white;
+}
+
+.about__adv-swiper-button-next:after, .about__adv-swiper-button-prev:after {
+  font-family: swiper-icons;
+  font-size: 24px!important;
+  text-transform: none!important;
+  letter-spacing: 0;
+  text-transform: none;
+  font-variant: initial;
+  line-height: 1;
+}
+
+
+
+
+.widget-icon {
+  .st0{display:none;fill-rule:evenodd;clip-rule:evenodd;fill:#616160;}
+	.st1{fill-rule:evenodd;clip-rule:evenodd;fill:#FFFFFF;}
+}
+
+.analitica-icon {
+  .st0{display:none;fill-rule:evenodd;clip-rule:evenodd;fill:#616160;}
+	.st1{fill:#FFFFFF;}
+	.st2{fill-rule:evenodd;clip-rule:evenodd;fill:#FFFFFF;}
+}
+
+.controls-icon {
+  .st0{display:none;fill-rule:evenodd;clip-rule:evenodd;fill:#616160;}
+	.st1{fill:#FFFFFF;}
+}
+
+.price-icon {
+  .st0{display:none;fill-rule:evenodd;clip-rule:evenodd;fill:#616160;}
+	.st1{fill-rule:evenodd;clip-rule:evenodd;fill:#FFFFFF;}
 }
