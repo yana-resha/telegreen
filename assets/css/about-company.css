@@ -8312,14 +8312,6 @@ body {
   .sales__block-title-container {
     margin-bottom: 20px;
   }
-  .about__value-list-part-text {
-    font-size: 12px;
-    line-height: 20px;
-  }
-  .about__desc {
-    font-size: 12px;
-    line-height: 24px;
-  }
   .about__desc-container {
     margin-bottom: 25px;
   }
@@ -8446,14 +8438,6 @@ body {
   }
   .about__comand-swiper-photo {
     height: 130px;
-  }
-  .about__desc {
-    font-size: 16px;
-    line-height: 20px;
-  }
-  .about__value-list-part-text {
-    font-size: 16px;
-    line-height: 16px;
   }
   .sales__block-title {
     font-size: 20px;
