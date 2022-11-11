@@ -8,6 +8,10 @@ var swiper = new Swiper(".about__advantages-swiper", {
   //   el: ".swiper-pagination",
   //   clickable: true,
   // },
+  pagination: {
+    el: ".about-adv-pagination",
+    clickable: true,
+  },
   navigation: {
     nextEl: ".about__adv-swiper-button-next",
     prevEl: ".about__adv-swiper-button-prev",
@@ -26,19 +30,19 @@ var swiper = new Swiper(".about__advantages-swiper", {
         slidesPerGroup: 3,
     },
 
-    530: {
+    1: {
       slidesPerView: 2,
       spaceBetween: 30,
       slidesPerGroup: 2,
     },
 
-    1: {
-
-      slidesPerView: 1,
-      spaceBetween: 0,
-      slidesPerGroup: 1,
-
-    }
+    // 1: {
+// 
+      // slidesPerView: 1,
+      // spaceBetween: 0,
+      // slidesPerGroup: 1,
+// 
+    // }
 
   }
 });

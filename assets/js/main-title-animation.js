@@ -9,6 +9,9 @@ jQuery(document).ready(function($){
     const salesTitle = $('.sales-hero__title')[0];
     const salesDesc = $('.sales-hero__bottom-description')[0];
 
+    const aboutCompanyTitle = $('.about__container').find('.sales__block-title-container')[0];
+    const aboutCompanyDesc = $('.about__desc-container')[0];
+
     if (topDesc) {
 
         topDesc.classList.remove('fromTopOut');
@@ -36,6 +39,16 @@ jQuery(document).ready(function($){
     if (salesDesc) {
         salesDesc.classList.remove('fromBottomOut');
         salesDesc.classList.add('fromBottomIn');
+    }
+
+    if (aboutCompanyTitle) {
+      aboutCompanyTitle.classList.remove('fromRightOut');
+      aboutCompanyTitle.classList.add('fromRightIn');
+    }
+
+    if (aboutCompanyDesc) {
+      aboutCompanyDesc.classList.remove('fromLeftOut');
+      aboutCompanyDesc.classList.add('fromLeftIn');
     }
 
 })

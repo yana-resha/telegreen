@@ -26,19 +26,19 @@ var swiper = new Swiper(".about__comand-swiper", {
         slidesPerGroup: 3,
     },
 
-    500: {
+    1: {
       slidesPerView: 2,
-      spaceBetween: 30,
+      spaceBetween: 10,
       slidesPerGroup: 2,
     },
 
-    1: {
+    // 1: {
 
-      slidesPerView: 1,
-      spaceBetween: 0,
-      slidesPerGroup: 1,
+    //   slidesPerView: 1,
+    //   spaceBetween: 0,
+    //   slidesPerGroup: 1,
 
-    }
+    // }
 
   }
 });

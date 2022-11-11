@@ -57,3 +57,50 @@ document.addEventListener('DOMContentLoaded', () => {
   
   createObserver();
   })
+
+
+  const valueList = Array.from(document.querySelectorAll('.about__value-list-part'));
+
+  document.addEventListener('DOMContentLoaded', () => {
+    const createObserver = () => {
+      // создаем экземпляр IntersectionObserver
+      const observer = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            // если целевой элемент находится в зоне видимости
+            if (entry.isIntersecting) {
+              jQuery(document).ready(function($){
+                console.log(entry.target)
+                entry.target.classList.remove('fromRightOut');
+                entry.target.classList.add('fromRightIn');
+                
+              })
+            } else {
+              jQuery(document).ready(function($){
+                entry.target.classList.add('fromRightOut');
+                entry.target.classList.remove('fromRightIn');
+              })
+            }
+          });
+        },
+        {
+          // процент пересечения целевого элемента с областью просмотра
+          // 10%
+          threshold: 0.8,
+        }
+      );
+    
+      // находим все секции
+      // начинаем за ними наблюдать
+      
+      valueList.forEach(el => {
+  
+        observer.observe(el);
+      })
+    };
+    
+    if (valueList) {
+
+      createObserver();
+    }
+    })
