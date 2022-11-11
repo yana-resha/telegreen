@@ -9,7 +9,6 @@ jQuery(document).ready(function($){
     const salesTitle = $('.sales-hero__title')[0];
     const salesDesc = $('.sales-hero__bottom-description')[0];
 
-    console.log(salesTitle)
     if (topDesc) {
 
         topDesc.classList.remove('fromTopOut');
@@ -30,8 +29,8 @@ jQuery(document).ready(function($){
     }
 
     if (salesTitle) {
-        salesTitle.classList.remove('scaleUpOut');
-        salesTitle.classList.add('scaleUpIn');
+        salesTitle.classList.remove('fromTopOut');
+        salesTitle.classList.add('fromTopIn');
     }
 
     if (salesDesc) {

@@ -14,19 +14,19 @@ var swiper = new Swiper(".about__comand-swiper", {
   },
 
   breakpoints: {
-    1185: {
+    1361: {
       slidesPerView: 4,
       spaceBetween: 30,
       slidesPerGroup: 4,
     },
 
-    900: {
+    700: {
         slidesPerView: 3,
         spaceBetween: 30,
         slidesPerGroup: 3,
     },
 
-    577: {
+    500: {
       slidesPerView: 2,
       spaceBetween: 30,
       slidesPerGroup: 2,

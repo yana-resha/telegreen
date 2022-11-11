@@ -630,9 +630,101 @@
   font-weight: 500;
   font-style: normal;
 }
-.ff {
-  width: 1000px;
-  height: 100px;
+.theatre .st0 {
+  fill: #010202;
+}
+.theatre .st1 {
+  fill: #47AB34;
+}
+.theatre .st2 {
+  fill: #FFFFFF;
+}
+
+.concert .st0 {
+  fill: #47AB34;
+}
+.concert .st1 {
+  fill: #010202;
+}
+
+.musey .st0 {
+  fill: #47AB34;
+}
+.musey .st1 {
+  fill: #010202;
+}
+
+.kino .st0 {
+  fill: #47AB34;
+}
+.kino .st1 {
+  fill: #010202;
+}
+
+.events .st0 {
+  fill: #47AB34;
+}
+.events .st1 {
+  fill: #010202;
+}
+
+.footer-svg .st {
+  fill: #FFFFFF;
+}
+.footer-svg .sg {
+  fill: #42A435;
+}
+.footer-svg .st2 {
+  fill: #484442;
+}
+.footer-svg .st3 {
+  enable-background: new;
+}
+
+.square .sx {
+  fill: #484543;
+}
+.square .sg {
+  fill: #44A535;
+}
+
+.letter .sm {
+  fill: #484442;
+}
+.letter .sg {
+  fill: #42A435;
+}
+
+.burger-svg .cls-g {
+  fill: #44ac33;
+  fill-rule: evenodd;
+}
+
+.adv-icon-1 .sv {
+  display: none;
+  fill: #111111;
+}
+.adv-icon-1 .st {
+  fill: #FFFFFF;
+}
+
+.adv-icon-2 .st {
+  fill: #FFFFFF;
+}
+
+.adv-icon-3 .st {
+  fill: #FFFFFF;
+}
+
+.adv-icon-4 {
+  fill: #FFFFFF;
+}
+.adv-icon-4 .st {
+  fill: #FFFFFF;
+}
+
+.adv-icon-5 .st {
+  fill: #FFFFFF;
 }
 
 .fromTopIn {
@@ -1236,7 +1328,7 @@ body {
   top: 90px;
 }
 .system__list li {
-  width: 30%;
+  width: 29%;
   min-height: 390px;
 }
 .system__list li:not(:nth-child(3n)) {
@@ -1248,12 +1340,26 @@ body {
 .system__list-part {
   position: relative;
   overflow: hidden;
-  box-shadow: 1px 16px 18px 4px rgba(2, 2, 2, 0.26);
   filter: none;
+  max-height: 390px;
+  min-height: 390px;
+  background-color: white;
+  box-shadow: 1px 16px 18px 4px rgba(2, 2, 2, 0.26);
   transition: filter 0.3s ease-in-out;
 }
-.system .x:focus-visible,
-.system .x:hover {
+.system__list-part svg {
+  width: 100%;
+  height: 100%;
+}
+.system__list-part-link {
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+}
+.system__list-part:focus-visible .animate-square, .system__list-part:hover .animate-square {
   -webkit-animation: bounseLeft 1.5s ease infinite;
           animation: bounseLeft 1.5s ease infinite;
 }
@@ -1267,12 +1373,6 @@ body {
 }
 .system__list-part:active .system__list-part-img-container {
   filter: grayscale(1);
-}
-.system__list-part-img-container {
-  height: 100%;
-  position: relative;
-  filter: grayscale(0);
-  transition: filter 0.5s ease-in-out, transform 0.5s ease-in-out;
 }
 .system__list-part-title {
   position: absolute;
