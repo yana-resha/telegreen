@@ -183,10 +183,10 @@ $btn-green: rgba(68, 172, 51, 1);
 }
 
 .footer-svg {
-.st{fill:#FFFFFF;}
-.sg{fill:#42A435;}
-.st2{fill:#484442;}
-.st3{enable-background:new;}
+  .st0{display:none;fill:#606060;}
+  .st1{fill:#FFFFFF;}
+  .st2{fill:#42A435;}
+  .st3{enable-background:new    ;}
 }
 
 .square {
@@ -378,6 +378,33 @@ body {
   max-width: 25%;
   // bottom: 100px;
   @include fixed-btn();
+}
+
+.scroll-to-top {
+  position: fixed;
+  right: 20px;
+  bottom: 50px;
+  display: none;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  color:rgb(68, 172, 51, 1);
+  font-size: 50px;
+  cursor: pointer;
+  transition: color 0.3s ease-in-out;
+
+  &:focus-visible {
+    color:rgb(68, 172, 51, 0.8);
+  }
+
+  &:hover {
+    color:rgb(68, 172, 51, 0.8);
+  }
+}
+
+.scroll-to-top.block {
+  display: block;
+  
 }
 
 
@@ -870,9 +897,7 @@ body {
 
   &__list-part {
     position: relative;
-    overflow: hidden;
     filter: none;
-    
     max-height: 390px;
     min-height: 390px;
     background-color: white;
@@ -902,36 +927,21 @@ body {
 
   &__list-part:focus-visible .animate-square,
   &__list-part:hover .animate-square {
-    
-    animation: bounseLeft 1.5s ease infinite;
+    animation: bounceHorizonte 1.5s ease infinite;
   }
 
 
-  .y:focus-visible,
-  .y:hover {
-    animation: bounce3 1.5s ease infinite;
+  &__list-part:focus-visible .animate-square-vertical,
+  &__list-part:hover .animate-square-vertical {
+    animation: bounceVertical 1.5s ease infinite;
   }
 
-  
-
-
-  &__list-part:focus-visible .system__list-part-img-container,
-  &__list-part:hover .system__list-part-img-container {
-    
-    filter: grayscale(0);
+  &__list-part:focus-visible .system__list-part-title,
+  &__list-part:hover .system__list-part-title {
+    color: #006400;
   }
 
-  &__list-part:active .system__list-part-img-container{
-    filter: grayscale(1);
-  }
 
-  // &__list-part-img-container {
-    
-  //   height: 100%;
-  //   position: relative;
-  //   filter: grayscale(0);
-  //   transition: filter 0.5s ease-in-out, transform 0.5s ease-in-out;
-  // }
 
   &__list-part-title {
     position: absolute;
@@ -940,13 +950,13 @@ body {
     min-width: auto;
     color: $font-color-black;
     font-weight: 800;
-    font-size: 19px;
+    font-size: 20px;
     line-height: 25px;
-
+    transition: color 0.3s ease-in-out;
   }
 
   .title-left {
-    left: 25px
+    left: 15px
   }
 
   .title-top {
@@ -1111,6 +1121,12 @@ body {
     padding: 0;
     text-align: center;
     color: $font-color-grey;
+  }
+
+  .percent {
+    color: #3f4650;
+    font-size: 16px;
+    font-weight: 600;
   }
 
   .pushka {
@@ -1547,6 +1563,13 @@ body {
     position: relative;
     height: 340px;
     margin-bottom: 20px;
+
+    .blog__img-link {
+      display: block;
+      width: 100%;
+      height: 100%;
+    }
+
     img {
       
       object-fit: cover;
@@ -1725,6 +1748,15 @@ body {
   &__link {
     color: white;
     margin-bottom: 15px;
+    transition: 0.3s ease-in-out;
+    &:focus-visible,
+    &:hover {
+      color: rgba(68, 172, 51, 0.7);
+    }
+
+    &:active {
+      color: rgba(68, 172, 51, 1);
+    }
   }
 
   &__left-block {
@@ -1752,6 +1784,16 @@ body {
 
   &__middle-block-list-part {
     color: white;
+    transition: color 0.3s ease-in-out;
+
+    &:focus-visible,
+    &:hover {
+      color: rgba(68, 172, 51, 0.7);
+    }
+
+    &:active {
+      color: rgba(68, 172, 51, 1);
+    }
   }
 
   &__middle-block-list {
@@ -1786,6 +1828,29 @@ body {
     text-align: center;
     flex-direction: column;
     justify-content: center;
+    transition: background-color 0.3s ease-in-out;
+
+    .fa {
+      transition: color 0.3s ease-in-out;
+    }
+
+    &:focus-visible,
+    &:hover {
+      background-color: rgba(68, 172, 51, 0.7);
+    }
+
+    &:active {
+      background-color: rgba(68, 172, 51, 1);
+    }
+
+    &:focus-visible .fa,
+    &:hover .fa {
+      color: white;
+    }
+
+    &:active .fa {
+      color: white;
+    }
   
   }
 
@@ -1799,6 +1864,17 @@ body {
 
   &__rigth-block-link {
     margin-bottom: 15px;
+    transition: color 0.3s ease-in-out;
+
+    &:focus-visible,
+    &:hover {
+      color: rgba(68, 172, 51, 0.7);
+    }
+
+    &:active {
+      color: rgba(68, 172, 51, 1);
+    }
+    
   }
 
   &__rigth-block-contacts div {
@@ -1987,7 +2063,7 @@ body {
     .nav-dropdown-active {
       opacity: 1;
       display: flex;
-      animation: fadeInFlex 1s ease-in-out;
+      animation: fadeInFlex 0.3s ease-in-out;
     }
 
    }
