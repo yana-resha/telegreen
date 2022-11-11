@@ -826,8 +826,13 @@ body {
   }
 
   .about__desc {
-    font-size: 10px;
+    font-size: 16px;
     line-height: 20px;
+  }
+
+  .about__value-list-part-text {
+    font-size: 16px;
+    line-height: 16px;
   }
 
   .sales__block-title {
@@ -845,10 +850,6 @@ body {
     margin-bottom: 10px;
   }
 
-  .about__value-list-part-text {
-    font-size: 10px;
-    line-height: 16px;
-  }
 
   .list-marker {
     width: 2px;
