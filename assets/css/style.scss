@@ -190,8 +190,11 @@ $btn-green: rgba(68, 172, 51, 1);
 }
 
 .square {
-  .sx{fill:#484543;}	
-  .sg{fill:#44A535;}
+  box-shadow: 0 -5px 7px -5px rgba(0, 0, 0, .5), 5px 0 7px -5px rgba(0, 0, 0, .5);
+
+  // box-shadow: 0 14px 28px rgba(0,0,0,0.75), 0 10px 10px rgba(0,0,0,0.72);
+  .st0{fill:#484442;}
+	.st1{fill:#42A435;}
 }
 
 .letter {
@@ -1141,6 +1144,9 @@ body {
   &__list-part-content-bottom {
     padding-left: 45px;
     padding-right: 45px;
+    
+    display: flex;
+    flex-direction: column;
   }
 
   &__list-part-content-bottom-commission-count {
@@ -1156,6 +1162,7 @@ body {
 
   &__list-part-content-bottom-commission-count.blue {
     color: $font-color-blue;
+    white-space: nowrap;
   }
 
   &__list-part-content-bottom-commission-count.grey {
@@ -1172,8 +1179,9 @@ body {
 
   &__list-btn {
     @include grey-green-btn();
-    padding-left: 60px;
-    padding-right: 60px;
+    // width: 100%;
+    padding-left: 30px;
+    padding-right: 30px;
   }
 }
 
@@ -1988,8 +1996,8 @@ body {
 @media (max-width: 1170px) {
 
   .tarifs__list-part-content-bottom {
-    padding-left: 25px;
-    padding-right: 25px;
+    padding-left: 15px;
+    padding-right: 15px;
     display: flex;
     flex-direction: column;
     align-items: center;

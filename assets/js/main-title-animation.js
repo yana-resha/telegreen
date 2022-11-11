@@ -12,6 +12,8 @@ jQuery(document).ready(function($){
     const aboutCompanyTitle = $('.about__container').find('.sales__block-title-container')[0];
     const aboutCompanyDesc = $('.about__desc-container')[0];
 
+    const skdTitle = $('.skd__about-container').find('.sales__block-title-container')[0];
+
     if (topDesc) {
 
         topDesc.classList.remove('fromTopOut');
@@ -49,6 +51,12 @@ jQuery(document).ready(function($){
     if (aboutCompanyDesc) {
       aboutCompanyDesc.classList.remove('fromLeftOut');
       aboutCompanyDesc.classList.add('fromLeftIn');
+    }
+
+    if (skdTitle) {
+      
+      skdTitle.classList.remove('fromRightOut');
+      skdTitle.classList.add('fromRightIn');
     }
 
 })
