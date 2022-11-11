@@ -682,11 +682,14 @@
   enable-background: new;
 }
 
-.square .sx {
-  fill: #484543;
+.square {
+  box-shadow: 0 -5px 7px -5px rgba(0, 0, 0, 0.5), 5px 0 7px -5px rgba(0, 0, 0, 0.5);
 }
-.square .sg {
-  fill: #44A535;
+.square .st0 {
+  fill: #484442;
+}
+.square .st1 {
+  fill: #42A435;
 }
 
 .letter .sm {
@@ -3971,6 +3974,7 @@ body {
 
 .sales__block-link {
   display: block;
+  color: white;
   border: 1px solid transparent;
   outline: none;
   font-size: 16px;
@@ -4007,7 +4011,7 @@ body {
   grid-template-columns: 22% 22% 22% 22%;
   justify-content: space-between;
   grid-row-gap: 40px;
-  margin-bottom: 45px;
+  margin-top: 100px;
 }
 
 .sales__block-list-part {

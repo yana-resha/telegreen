@@ -983,11 +983,14 @@
   enable-background: new;
 }
 
-.square .sx {
-  fill: #484543;
+.square {
+  box-shadow: 0 -5px 7px -5px rgba(0, 0, 0, 0.5), 5px 0 7px -5px rgba(0, 0, 0, 0.5);
 }
-.square .sg {
-  fill: #44A535;
+.square .st0 {
+  fill: #484442;
+}
+.square .st1 {
+  fill: #42A435;
 }
 
 .letter .sm {
@@ -4309,6 +4312,7 @@ body {
   justify-content: space-between;
   grid-row-gap: 40px;
   margin-bottom: 45px;
+  margin-bottom: 30px;
 }
 
 .sales__block-list-part {
@@ -5247,11 +5251,14 @@ body {
   enable-background: new;
 }
 
-.square .sx {
-  fill: #484543;
+.square {
+  box-shadow: 0 -5px 7px -5px rgba(0, 0, 0, 0.5), 5px 0 7px -5px rgba(0, 0, 0, 0.5);
 }
-.square .sg {
-  fill: #44A535;
+.square .st0 {
+  fill: #484442;
+}
+.square .st1 {
+  fill: #42A435;
 }
 
 .letter .sm {
@@ -8573,6 +8580,7 @@ body {
   justify-content: space-between;
   grid-row-gap: 40px;
   margin-bottom: 45px;
+  margin-bottom: 30px;
 }
 
 .sales__block-list-part {
@@ -9210,11 +9218,14 @@ body {
   enable-background: new;
 }
 
-.square .sx {
-  fill: #484543;
+.square {
+  box-shadow: 0 -5px 7px -5px rgba(0, 0, 0, 0.5), 5px 0 7px -5px rgba(0, 0, 0, 0.5);
 }
-.square .sg {
-  fill: #44A535;
+.square .st0 {
+  fill: #484442;
+}
+.square .st1 {
+  fill: #42A435;
 }
 
 .letter .sm {
@@ -13264,11 +13275,14 @@ body {
   enable-background: new;
 }
 
-.square .sx {
-  fill: #484543;
+.square {
+  box-shadow: 0 -5px 7px -5px rgba(0, 0, 0, 0.5), 5px 0 7px -5px rgba(0, 0, 0, 0.5);
 }
-.square .sg {
-  fill: #44A535;
+.square .st0 {
+  fill: #484442;
+}
+.square .st1 {
+  fill: #42A435;
 }
 
 .letter .sm {
