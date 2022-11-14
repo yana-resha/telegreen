@@ -4275,6 +4275,7 @@ body {
 
 .sales__block-link {
   display: block;
+  color: white;
   border: 1px solid transparent;
   outline: none;
   font-size: 16px;
@@ -4311,8 +4312,8 @@ body {
   grid-template-columns: 22% 22% 22% 22%;
   justify-content: space-between;
   grid-row-gap: 40px;
+  margin-top: 100px;
   margin-bottom: 45px;
-  margin-bottom: 30px;
 }
 
 .sales__block-list-part {
