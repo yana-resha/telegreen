@@ -2,7 +2,6 @@ const sectionSkd = document.querySelector('.skd__about');
 
 const titles = [...document.querySelectorAll('.about__values-title'), ...document.querySelectorAll('.skd__about-where-list-title')]
 
-console.log(titles)
 
 
 
@@ -49,43 +48,98 @@ document.addEventListener('DOMContentLoaded', () => {
     createObserver();
   }
 
-  // const createObserverClient = () => {
-  //   // создаем экземпляр IntersectionObserver
-  //   const observer = new IntersectionObserver(
-  //     (entries) => {
-  //       entries.forEach((entry) => {
-  //         // если целевой элемент находится в зоне видимости
-  //         if (entry.isIntersecting) {
-  //           const title = document.querySelector('.clients__title')
-  //           title.classList.remove('scaleUpOut')
-  //           title.classList.add('scaleUpIn')
-  //           const list = document.querySelector('.clients__list');
-  //           list.classList.remove('fromBottomOut')
-  //           list.classList.add('fromBottomIn')
-           
-  //         } else {
-  //           const title = document.querySelector('.clients__title')
-  //           title.classList.add('scaleUpOut')
-  //           title.classList.remove('scaleUpIn')
-  //           const list = document.querySelector('.clients__list');
-  //           list.classList.add('fromBottomOut')
-  //           list.classList.remove('fromBottomIn')
-  //         }
-  //       });
-  //     },
-  //     {
-  //       threshold: 0.3,
-  //     }
-  //   );
+  // const desc = [...document.querySelectorAll('.skd__about-where-desc')]
+
+  const skudList = [...document.querySelectorAll('.skd__skud-list-part')];
+
+
   
-  //   // находим все секции
-  //   // начинаем за ними наблюдать
+
+  const createObserverDesc = () => {
+    // создаем экземпляр IntersectionObserver
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          // если целевой элемент находится в зоне видимости
+          if (entry.isIntersecting) {
+            if (entry.target.classList.contains('reverse')) {
+              entry.target.classList.add('fromRightIn')
+              entry.target.classList.remove('fromRightOut')
+            } else {
+
+            entry.target.classList.remove('fromLeftOut')
+            entry.target.classList.add('fromLeftIn')
+            }
+           
+          } else {
+
+            if (entry.target.classList.contains('reverse')) {
+              entry.target.classList.remove('fromRightIn')
+              entry.target.classList.add('fromRightOut')
+            } else {
+
+            entry.target.classList.add('fromLeftOut')
+            entry.target.classList.remove('fromLeftIn')
+            }
+            
+          }
+        });
+      },
+      {
+        threshold: 0.3,
+      }
+    );
+  
+    // находим все секции
+    // начинаем за ними наблюдать
     
-  //     observer.observe(clientSection);
-  // };
+    skudList.forEach(el => {
+      observer.observe(el);
+    })
+  };
 
-  // if (clientSection) {
+  if (sectionSkd) {
 
-  //   createObserverClient();
-  // }
+    createObserverDesc();
+  }
+
+
+  const advListImg = [...document.querySelectorAll('.about__desc-list-part-img')]
+
+  const createObserverAdvList = () => {
+    // создаем экземпляр IntersectionObserver
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          // если целевой элемент находится в зоне видимости
+          if (entry.isIntersecting) {
+            
+            entry.target.style.opacity = 1;
+            entry.target.style.transform = 'scale(1)';
+           
+          } else {
+
+            entry.target.style.opacity = 0;
+            entry.target.style.transform = 'scale(1.1)';
+            
+          }
+        });
+      },
+      {
+        threshold: 0.3,
+      }
+    );
+  
+    // находим все секции
+    // начинаем за ними наблюдать
+    
+    advListImg.forEach(el => {
+      observer.observe(el);
+    })
+  };
+
+  if (sectionSkd) {
+
+    createObserverAdvList();
+  }
 })

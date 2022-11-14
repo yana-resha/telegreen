@@ -673,4 +673,24 @@
   100% {
     transform: scale(1);
   }
+}
+@-webkit-keyframes reversed {
+  from {
+    stroke-dasharray: 0 FULL_LENGTH;
+    stroke-dashoffset: 0;
+  }
+  to {
+    stroke-dasharray: FULL_LENGTH 0;
+    stroke-dashoffset: FULL_LENGTH;
+  }
+}
+@keyframes reversed {
+  from {
+    stroke-dasharray: 0 FULL_LENGTH;
+    stroke-dashoffset: 0;
+  }
+  to {
+    stroke-dasharray: FULL_LENGTH 0;
+    stroke-dashoffset: FULL_LENGTH;
+  }
 }/*# sourceMappingURL=keyframes.css.map */

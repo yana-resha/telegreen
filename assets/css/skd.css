@@ -674,6 +674,26 @@
     transform: scale(1);
   }
 }
+@-webkit-keyframes reversed {
+  from {
+    stroke-dasharray: 0 FULL_LENGTH;
+    stroke-dashoffset: 0;
+  }
+  to {
+    stroke-dasharray: FULL_LENGTH 0;
+    stroke-dashoffset: FULL_LENGTH;
+  }
+}
+@keyframes reversed {
+  from {
+    stroke-dasharray: 0 FULL_LENGTH;
+    stroke-dashoffset: 0;
+  }
+  to {
+    stroke-dasharray: FULL_LENGTH 0;
+    stroke-dashoffset: FULL_LENGTH;
+  }
+}
 @keyframes headerUnObserve {
   0% {
     background-color: rgba(18, 21, 17, 0.9);
@@ -1010,6 +1030,16 @@
   }
   100% {
     transform: scale(1);
+  }
+}
+@keyframes reversed {
+  from {
+    stroke-dasharray: 0 FULL_LENGTH;
+    stroke-dashoffset: 0;
+  }
+  to {
+    stroke-dasharray: FULL_LENGTH 0;
+    stroke-dashoffset: FULL_LENGTH;
   }
 }
 @font-face {
@@ -4316,6 +4346,16 @@ body {
     transform: scale(1);
   }
 }
+@keyframes reversed {
+  from {
+    stroke-dasharray: 0 FULL_LENGTH;
+    stroke-dashoffset: 0;
+  }
+  to {
+    stroke-dasharray: FULL_LENGTH 0;
+    stroke-dashoffset: FULL_LENGTH;
+  }
+}
 * {
   box-sizing: border-box;
 }
@@ -5053,6 +5093,16 @@ body {
     transform: scale(1);
   }
 }
+@keyframes reversed {
+  from {
+    stroke-dasharray: 0 FULL_LENGTH;
+    stroke-dashoffset: 0;
+  }
+  to {
+    stroke-dasharray: FULL_LENGTH 0;
+    stroke-dashoffset: FULL_LENGTH;
+  }
+}
 @keyframes headerUnObserve {
   0% {
     background-color: rgba(18, 21, 17, 0.9);
@@ -5389,6 +5439,16 @@ body {
   }
   100% {
     transform: scale(1);
+  }
+}
+@keyframes reversed {
+  from {
+    stroke-dasharray: 0 FULL_LENGTH;
+    stroke-dashoffset: 0;
+  }
+  to {
+    stroke-dasharray: FULL_LENGTH 0;
+    stroke-dashoffset: FULL_LENGTH;
   }
 }
 @font-face {
@@ -8695,6 +8755,16 @@ body {
     transform: scale(1);
   }
 }
+@keyframes reversed {
+  from {
+    stroke-dasharray: 0 FULL_LENGTH;
+    stroke-dashoffset: 0;
+  }
+  to {
+    stroke-dasharray: FULL_LENGTH 0;
+    stroke-dashoffset: FULL_LENGTH;
+  }
+}
 * {
   box-sizing: border-box;
 }
@@ -9430,6 +9500,16 @@ body {
   }
   100% {
     transform: scale(1);
+  }
+}
+@keyframes reversed {
+  from {
+    stroke-dasharray: 0 FULL_LENGTH;
+    stroke-dashoffset: 0;
+  }
+  to {
+    stroke-dasharray: FULL_LENGTH 0;
+    stroke-dashoffset: FULL_LENGTH;
   }
 }
 @font-face {
@@ -13526,6 +13606,16 @@ body {
     transform: scale(1);
   }
 }
+@keyframes reversed {
+  from {
+    stroke-dasharray: 0 FULL_LENGTH;
+    stroke-dashoffset: 0;
+  }
+  to {
+    stroke-dasharray: FULL_LENGTH 0;
+    stroke-dashoffset: FULL_LENGTH;
+  }
+}
 @font-face {
   font-family: "monserrat";
   src: url("../fonts/Montserrat-Regular.woff") format("woff2"), url("../fonts/Montserrat-Regular.woff2") format("woff");
@@ -16618,6 +16708,9 @@ body {
   padding-bottom: 15px;
   padding-right: 15px;
   padding-left: 15px;
+  opacity: 0;
+  transform: scale(1.1);
+  transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
 }
 .skd__advantages .about__desc-list-part-img svg {
   width: 100%;

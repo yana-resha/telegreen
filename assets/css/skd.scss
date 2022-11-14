@@ -153,12 +153,16 @@
     padding-bottom: 15px;
     padding-right: 15px;
     padding-left: 15px;
+    opacity: 0;
+    transform: scale(1.1);
+    transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
     svg {
       width: 100%;
       height: 100%;
       overflow: visible;
       transition: transform 1s ease-in-out;
     }
+
   }
 
   .rotate-internal,
@@ -189,6 +193,8 @@
     animation: rubleHorizonte 0.5s ease-in-out;
     fill: gray;
   }
+
+
 
 
   .about__desc-list-part:hover .tick {
