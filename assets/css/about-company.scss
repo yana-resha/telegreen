@@ -35,6 +35,60 @@ body {
 
 }
 
+.complex-icon {
+	.st0{display:none;fill:#616160;}
+	.st1{fill:#FFFFFF;}
+
+  @media (max-width: 500px) {
+    .st1 {
+      fill:#44ac33;
+    }
+  }
+}
+
+.delivery-icon {
+  .st0{display:none;fill:#616160;}
+	.st1{fill:#FFFFFF;}
+
+  @media (max-width: 500px) {
+    .st1 {
+      fill:#44ac33;
+    }
+  }
+}
+
+.accounting-icon {
+  .st0{display:none;fill:#616160;}
+	.st1{fill:#FFFFFF;}
+
+  @media (max-width: 500px) {
+    .st1 {
+      fill:#44ac33;
+    }
+  }
+}
+
+.promo-icon {
+  .st0{display:none;fill:#616160;}
+	.st1{fill:#FFFFFF;}
+
+  @media (max-width: 500px) {
+    .st1 {
+      fill:#44ac33;
+    }
+  }
+}
+
+.planning-icon {
+  .st0{fill:#FFFFFF;}
+  @media (max-width: 500px) {
+    .st0 {
+      fill:#44ac33;
+    }
+  }
+
+}
+
 
 
 .about {

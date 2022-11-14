@@ -1,0 +1,94 @@
+@import './style.scss';
+@import './keyframes.scss';
+
+.more-sales {
+  padding-bottom: 100px;
+}
+
+.sales-detailed-block {
+  
+  padding-top: 35px;
+  background-color: white;
+  padding-bottom: 10px;
+  padding-left: 35px;
+  padding-right: 35px;
+
+}
+
+.sales-detailed-short-desc {
+  display: grid;
+  grid-template-columns: 25% 70%;
+  justify-content: space-between;
+  align-items: stretch;
+  margin-bottom: 30px;
+}
+
+
+.sales-detailed-short-desc-photo {
+  position: relative;
+  min-height: 250px;
+  max-height: auto;
+  box-shadow: 20px 20px 0 -10px $font-color-green;
+  img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+
+  }
+}
+
+.sales-detailed-short-date {
+
+  font-size: 26px;
+  font-weight: 600;
+  color: $font-color-green;
+  margin-bottom: 30px;
+  // -webkit-animation: 1.2s ease-in-out 0s normal none infinite running trambling;
+  // -moz-animation: 1.2s ease-in-out 0s normal none infinite running trambling;
+  // -o-animation: 1.2s ease-in-out 0s normal none infinite running trambling;
+  // animation: 3s ease-in-out 0s normal none infinite running trambling;
+}
+
+.sales-detailed-short-desc-text {
+  font-size: 20px;
+  line-height: 32px;
+  width: 60%;
+  color: $font-color-dark-grey;
+}
+
+.sales-detailed-short-desc-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.sales-detailed-btn {
+
+  @include grey-green-btn();
+  padding-left: 10px;
+  padding-right: 10px;
+  font-size: 20px;
+}
+
+.sales-detailed-more-desc {
+  font-size: 14px;
+  line-height: 22px;
+  color: $font-color-grey;
+  width: 80%;
+  margin-bottom: 50px;
+}
+
+.more-title {
+  margin-bottom: 55px;
+  color: $font-color-dark-grey;
+  font-size: 21px;
+  text-align: center;
+}
+
+.sales__block-list-part.more {
+  border: 0.5px solid rgb(231, 238, 243);
+}
+
