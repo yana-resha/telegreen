@@ -70,7 +70,6 @@ document.addEventListener('DOMContentLoaded', () => {
             // если целевой элемент находится в зоне видимости
             if (entry.isIntersecting) {
               jQuery(document).ready(function($){
-                console.log(entry.target)
                 entry.target.classList.remove('fromRightOut');
                 entry.target.classList.add('fromRightIn');
                 

@@ -1,5 +1,8 @@
+const sectionSkd = document.querySelector('.skd__about');
 
+const titles = [...document.querySelectorAll('.about__values-title'), ...document.querySelectorAll('.skd__about-where-list-title')]
 
+console.log(titles)
 
 
 
@@ -11,12 +14,13 @@ document.addEventListener('DOMContentLoaded', () => {
         entries.forEach((entry) => {
           // если целевой элемент находится в зоне видимости
           if (entry.isIntersecting) {
-            entry.target.classList.remove('fromLeftOut')
-            entry.target.classList.add('fromLeftIn')
+            entry.target.classList.remove('fromRightOut')
+            entry.target.classList.add('fromRightIn')
            
           } else {
-            entry.target.classList.add('fromLeftOut')
-            entry.target.classList.remove('fromLefIn')
+            entry.target.classList.add('fromRightOut')
+            entry.target.classList.remove('fromRightIn')
+            // fromRightOut
           }
         });
       },
@@ -31,13 +35,16 @@ document.addEventListener('DOMContentLoaded', () => {
     // начинаем за ними наблюдать
 
 
-      observer.observe(systemTitle);
+    titles.forEach(el => {
+
+      observer.observe(el);
+    })
 
     
 
   };
 
-  if (systemTitle) {
+  if (sectionSkd) {
 
     createObserver();
   }
