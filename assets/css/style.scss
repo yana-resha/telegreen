@@ -122,15 +122,16 @@ $btn-green: rgb( 70, 171, 52);
   font-weight: 500;
   padding-top: 15px;
   padding-bottom: 15px;
-  background-color: $btn-green;
-  
+  background-color: rgba($btn-green, 0.7);
+  // background-color: $btn-green;
+
   letter-spacing: 1px;
   transition: background-color 0.3s ease-in-out;
   &:hover {
-    background-color: rgba($btn-green, 0.8);
+    background-color: rgba($btn-green, 1);
   }
   &:focus-visible {
-   background-color: rgba($btn-green, 0.8);
+   background-color: rgba($btn-green, 1);
  }
  
   &:active {
@@ -2582,6 +2583,14 @@ body {
 
 
  @media (max-width: 650px) {
+
+  .fixed-btn {
+    bottom: 270px;
+  }
+
+  .scroll-to-top {
+    right: 5px;
+  }
 
   .hero__title {
     font-size: 30px;

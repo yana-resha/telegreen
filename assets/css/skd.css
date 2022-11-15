@@ -3317,6 +3317,9 @@ body {
   }
 }
 @media (max-width: 650px) {
+  .fixed-btn {
+    bottom: 270px;
+  }
   .hero__title {
     font-size: 30px;
     line-height: 30px;
@@ -7726,6 +7729,9 @@ body {
   }
 }
 @media (max-width: 650px) {
+  .fixed-btn {
+    bottom: 270px;
+  }
   .hero__title {
     font-size: 30px;
     line-height: 30px;
@@ -11787,6 +11793,9 @@ body {
   }
 }
 @media (max-width: 650px) {
+  .fixed-btn {
+    bottom: 270px;
+  }
   .hero__title {
     font-size: 30px;
     line-height: 30px;
@@ -15952,6 +15961,9 @@ body {
   }
 }
 @media (max-width: 650px) {
+  .fixed-btn {
+    bottom: 270px;
+  }
   .hero__title {
     font-size: 30px;
     line-height: 30px;
