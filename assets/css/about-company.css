@@ -1293,15 +1293,15 @@ body {
   font-weight: 500;
   padding-top: 15px;
   padding-bottom: 15px;
-  background-color: rgb(68, 172, 51);
+  background-color: rgba(68, 172, 51, 0.7);
   letter-spacing: 1px;
   transition: background-color 0.3s ease-in-out;
 }
 .fixed-btn:hover {
-  background-color: rgba(68, 172, 51, 0.8);
+  background-color: #44ac33;
 }
 .fixed-btn:focus-visible {
-  background-color: rgba(68, 172, 51, 0.8);
+  background-color: #44ac33;
 }
 .fixed-btn:active {
   background-color: rgb(160, 165, 168);
@@ -2651,7 +2651,7 @@ body {
   font-weight: 500;
   padding-top: 15px;
   padding-bottom: 15px;
-  background-color: rgb(68, 172, 51);
+  background-color: rgba(68, 172, 51, 0.7);
   letter-spacing: 1px;
   transition: background-color 0.3s ease-in-out;
   width: 25%;
@@ -2660,10 +2660,10 @@ body {
   color: #fefefe;
 }
 .important__form-input-btn-submit:hover {
-  background-color: rgba(68, 172, 51, 0.8);
+  background-color: #44ac33;
 }
 .important__form-input-btn-submit:focus-visible {
-  background-color: rgba(68, 172, 51, 0.8);
+  background-color: #44ac33;
 }
 .important__form-input-btn-submit:active {
   background-color: rgb(160, 165, 168);
@@ -3319,6 +3319,9 @@ body {
 @media (max-width: 650px) {
   .fixed-btn {
     bottom: 270px;
+  }
+  .scroll-to-top {
+    right: 5px;
   }
   .hero__title {
     font-size: 30px;
@@ -4474,7 +4477,7 @@ body {
   font-weight: 500;
   padding-top: 15px;
   padding-bottom: 15px;
-  background-color: rgb(68, 172, 51);
+  background-color: rgba(68, 172, 51, 0.7);
   letter-spacing: 1px;
   transition: background-color 0.3s ease-in-out;
   font-weight: 400;
@@ -4482,10 +4485,10 @@ body {
   padding-right: 10px;
 }
 .sales__block-link:hover {
-  background-color: rgba(68, 172, 51, 0.8);
+  background-color: #44ac33;
 }
 .sales__block-link:focus-visible {
-  background-color: rgba(68, 172, 51, 0.8);
+  background-color: #44ac33;
 }
 .sales__block-link:active {
   background-color: rgb(160, 165, 168);
@@ -5357,15 +5360,15 @@ body {
   font-weight: 500;
   padding-top: 15px;
   padding-bottom: 15px;
-  background-color: rgb(68, 172, 51);
+  background-color: rgba(68, 172, 51, 0.7);
   letter-spacing: 1px;
   transition: background-color 0.3s ease-in-out;
 }
 .fixed-btn:hover {
-  background-color: rgba(68, 172, 51, 0.8);
+  background-color: #44ac33;
 }
 .fixed-btn:focus-visible {
-  background-color: rgba(68, 172, 51, 0.8);
+  background-color: #44ac33;
 }
 .fixed-btn:active {
   background-color: rgb(160, 165, 168);
@@ -6715,7 +6718,7 @@ body {
   font-weight: 500;
   padding-top: 15px;
   padding-bottom: 15px;
-  background-color: rgb(68, 172, 51);
+  background-color: rgba(68, 172, 51, 0.7);
   letter-spacing: 1px;
   transition: background-color 0.3s ease-in-out;
   width: 25%;
@@ -6724,10 +6727,10 @@ body {
   color: #fefefe;
 }
 .important__form-input-btn-submit:hover {
-  background-color: rgba(68, 172, 51, 0.8);
+  background-color: #44ac33;
 }
 .important__form-input-btn-submit:focus-visible {
-  background-color: rgba(68, 172, 51, 0.8);
+  background-color: #44ac33;
 }
 .important__form-input-btn-submit:active {
   background-color: rgb(160, 165, 168);
@@ -7383,6 +7386,9 @@ body {
 @media (max-width: 650px) {
   .fixed-btn {
     bottom: 270px;
+  }
+  .scroll-to-top {
+    right: 5px;
   }
   .hero__title {
     font-size: 30px;

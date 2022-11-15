@@ -14,6 +14,8 @@ jQuery(document).ready(function($){
 
     const skdTitle = $('.skd__about-container').find('.sales__block-title-container')[0];
 
+    const salesTitleTwo = $('.sales__block-title-container')[0];
+
     if (topDesc) {
 
         topDesc.classList.remove('fromTopOut');
@@ -57,6 +59,11 @@ jQuery(document).ready(function($){
       
       skdTitle.classList.remove('fromRightOut');
       skdTitle.classList.add('fromRightIn');
+    }
+
+    if (salesTitleTwo) {
+      salesTitleTwo.classList.remove('fromRightOut');
+      salesTitleTwo.classList.add('fromRightIn');
     }
 
 })

@@ -33,7 +33,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
   if (telegreen) {
     createObserver();
-  } else {
+  } 
+  else {
     header.classList.add('fixed-header')
     header.classList.add('header-on-top')
     headerRelative.classList.add('padding-un')
