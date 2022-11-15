@@ -4112,4 +4112,129 @@ body {
 
 .sales__block-list-part.more {
   border: 0.5px solid rgb(231, 238, 243);
+}
+
+@media (max-width: 1070px) {
+  .sales-detailed-short-desc {
+    display: grid;
+    grid-template-columns: 30% 65%;
+    justify-content: space-between;
+    align-items: stretch;
+    margin-bottom: 30px;
+  }
+}
+@media (max-width: 950px) {
+  .sales-detailed-short-desc {
+    grid-template-columns: 35% 60%;
+  }
+  .sales-detailed-short-desc-text {
+    width: 80%;
+  }
+}
+@media (max-width: 930px) {
+  .sales-detailed-short-desc-text {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  .sales-detailed-more-desc {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+}
+@media (max-width: 850px) {
+  .more-title {
+    margin-bottom: 35px;
+  }
+  .sales-detailed-short-desc {
+    grid-template-columns: 40% 55%;
+  }
+}
+@media (max-width: 760px) {
+  .sales-detailed-short-desc-text {
+    font-size: 18px;
+    line-height: 28px;
+  }
+  .sales-detailed-btn {
+    font-size: 16px;
+  }
+  .sales-detailed-short-date {
+    font-size: 24px;
+  }
+  .sales-detailed-short-desc-photo {
+    min-height: 200px;
+  }
+}
+@media (max-width: 700px) {
+  .sales-detailed-short-desc-text {
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+  .sales-detailed-short-desc {
+    grid-template-columns: 47% 47%;
+  }
+}
+@media (max-width: 630px) {
+  .sales-detailed-short-desc {
+    grid-template-columns: 100%;
+    grid-row-gap: 30px;
+  }
+  .sales-detailed-short-desc-photo {
+    min-height: 400px;
+  }
+  .sales-detailed-short-date {
+    margin-bottom: 10px;
+  }
+  .more-sales {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+}
+@media (max-width: 580px) {
+  .sales-detailed-short-desc-photo {
+    min-height: 350px;
+  }
+  .sales-detailed-short-desc {
+    margin-bottom: 20px;
+  }
+  .sales-detailed-btn {
+    font-size: 14px;
+  }
+}
+@media (max-width: 500px) {
+  .sales-detailed-block {
+    padding-top: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .sales-detailed-more-desc {
+    font-size: 12px;
+    line-height: 20px;
+  }
+  .sales-detailed-short-desc-text {
+    font-size: 14px;
+    line-height: 26px;
+  }
+  .sales-detailed-short-date {
+    font-size: 22px;
+  }
+  .sales-detailed-short-desc-photo {
+    box-shadow: 20px 20px 0 -15px #44ac33;
+  }
+}
+@media (max-width: 460px) {
+  .sales-detailed-short-desc-photo {
+    min-height: 300px;
+  }
+}
+@media (max-width: 415px) {
+  .sales-detailed-short-desc-text {
+    margin-bottom: 10px;
+  }
+  .sales-detailed-short-desc-photo {
+    min-height: 270px;
+  }
+  .more-sales {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
 }/*# sourceMappingURL=sales-more.css.map */

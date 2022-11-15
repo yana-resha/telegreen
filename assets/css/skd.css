@@ -12525,6 +12525,67 @@ body {
   fill: #FFFFFF;
 }
 
+.complex-icon .st0 {
+  display: none;
+  fill: #616160;
+}
+.complex-icon .st1 {
+  fill: #FFFFFF;
+}
+@media (max-width: 500px) {
+  .complex-icon .st1 {
+    fill: #44ac33;
+  }
+}
+
+.delivery-icon .st0 {
+  display: none;
+  fill: #616160;
+}
+.delivery-icon .st1 {
+  fill: #FFFFFF;
+}
+@media (max-width: 500px) {
+  .delivery-icon .st1 {
+    fill: #44ac33;
+  }
+}
+
+.accounting-icon .st0 {
+  display: none;
+  fill: #616160;
+}
+.accounting-icon .st1 {
+  fill: #FFFFFF;
+}
+@media (max-width: 500px) {
+  .accounting-icon .st1 {
+    fill: #44ac33;
+  }
+}
+
+.promo-icon .st0 {
+  display: none;
+  fill: #616160;
+}
+.promo-icon .st1 {
+  fill: #FFFFFF;
+}
+@media (max-width: 500px) {
+  .promo-icon .st1 {
+    fill: #44ac33;
+  }
+}
+
+.planning-icon .st0 {
+  fill: #FFFFFF;
+}
+@media (max-width: 500px) {
+  .planning-icon .st0 {
+    fill: #44ac33;
+  }
+}
+
 .about {
   padding-top: 70px;
   padding-bottom: 40px;
