@@ -8,26 +8,26 @@ var swiper = new Swiper(".other-system__swiper", {
   //   el: ".swiper-pagination",
   //   clickable: true,
   // },
-  // pagination: {
-    // el: ".about-adv-pagination",
-    // clickable: true,
-  // },
+  pagination: {
+    el: ".other-system__pagination",
+    clickable: true,
+  },
   navigation: {
     nextEl: ".other-system__next",
     prevEl: ".other-system__prev",
   },
 
   breakpoints: {
-    1361: {
+    1071: {
       slidesPerView: 3,
       spaceBetween: 40,
       slidesPerGroup: 3,
     },
 
-    800: {
-        slidesPerView: 3,
-        spaceBetween: 30,
-        slidesPerGroup: 3,
+    801: {
+        slidesPerView: 2,
+        spaceBetween: 50,
+        slidesPerGroup: 2,
     },
 
     1: {
