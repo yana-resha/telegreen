@@ -834,7 +834,7 @@
 .fromTopOut {
   transition: transform 1s ease, opacity 1s ease;
   transform: translate(0, -10px);
-  opacity: 0;
+  opacity: 0.5;
 }
 
 .fromBottomIn {
@@ -846,7 +846,7 @@
 .fromBottomOut {
   transition: transform 1s ease, opacity 1s ease;
   transform: translate(0, 10px);
-  opacity: 0;
+  opacity: 0.5;
 }
 
 .fromLeftIn {
@@ -858,7 +858,7 @@
 .fromLeftOut {
   transition: transform 1s ease, opacity 1s ease;
   transform: translate(-10px, 0);
-  opacity: 0;
+  opacity: 0.5;
 }
 
 .fromRightIn {
@@ -870,7 +870,7 @@
 .fromRightOut {
   transition: transform 1s ease, opacity 1s ease;
   transform: translate(10px, 0);
-  opacity: 0;
+  opacity: 0.5;
 }
 
 .scaleUpIn {

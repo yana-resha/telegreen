@@ -16,23 +16,23 @@ jQuery(document).ready(function($){
 
     const salesTitleTwo = $('.sales__block-title-container')[0];
 
+    const vacationTitle = $('.vacation__article-title')[0];
+
     if (topDesc) {
 
-        topDesc.classList.remove('fromTopOut');
-        topDesc.classList.add('fromTopIn');
+        topDesc.classList.remove('fromLeftOut');
+        topDesc.classList.add('fromLeftIn');
     }
 
     if (title) {
-      // scaleUpOut
-      // scaleUpIn
-      title.classList.remove('fromTopOut');
-      title.classList.add('fromTopIn');
+      title.classList.remove('fromRightOut');
+      title.classList.add('fromRightIn');
     }
 
     if (bottomDesc) {
 
-      bottomDesc.classList.remove('fromBottomOut');
-      bottomDesc.classList.add('fromBottomIn');
+      bottomDesc.classList.remove('fromLeftOut');
+      bottomDesc.classList.add('fromLeftIn');
     }
 
     if (salesTitle) {
@@ -66,4 +66,8 @@ jQuery(document).ready(function($){
       salesTitleTwo.classList.add('fromRightIn');
     }
 
+    if (vacationTitle) {
+      vacationTitle.classList.remove('fromLeftOut');
+      vacationTitle.classList.add('fromLeftIn');
+    }
 })

@@ -2,8 +2,19 @@
 document.addEventListener('DOMContentLoaded', () => {
   jQuery(document).ready(function($){
 
-    $('form')[0].addEventListener('submit', (e) => {
+    const form = $('form')[0];
+    form.addEventListener('submit', (e) => {
       e.preventDefault();
+      
+      const inputValid = false;
+
+      const allInput = Array.from($(form).find('.important__form-input'));
+      console.log(allInput)
+      allInput.forEach(el => {
+        if (el.classList.contains('tel')) {
+          console.log(el.value)
+        }
+      })
 
 
       
@@ -23,7 +34,7 @@ document.addEventListener('DOMContentLoaded', () => {
    }
    
    // 3. Если форма валидна и длина капчи не равно пустой строке, то отправляем форму на сервер (AJAX)
-   if ((formValid) && (captcha.length)) {
+   if ((formValid) && (captcha.length) && (inputValid)) {
     
      // добавить в formData значение 'g-recaptcha-response'=значение_recaptcha
      formData.append('g-recaptcha-response', captcha);
