@@ -14,6 +14,9 @@
 </head>
 <body>
   <button class="fixed-btn modal-btn">Оставить заявку</button>
+  <button class="scroll-to-category">
+    <i class="fa fa-angle-up" aria-hidden="true"></i>
+  </button>
   <header class="header">
     <div class="header__relative">
     <div class="container header__container">
@@ -134,7 +137,7 @@
         <div class="sales__block-title-border"></div>
         <h1 class="sales__block-title">КАТЕГОРИИ ОБОРУДОВАНИЯ СИСТЕМЫ КОНТРОЛЯ ДОСТУПА ПОСЕТИТЕЛЕЙ</h1>
       </div>
-      <div class="eq-category__description">
+      <div class="eq-category__description fromLeftOut">
         В каталоге нашего интернет-магазина доступна система контроля доступа посетителей в России. 
         Обеспечивается установка программного обеспечения и технические параметры комплекта. 
         Возможно подобрать систему для конкретного здания с учетом расположения помещений 
@@ -142,7 +145,7 @@
       </div>
       <ul class="eq-category__list list-no-marker">
         <li class="eq-category__list-part">
-          <button class="eq-category__list-part-btn">
+          <button class="eq-category__list-part-btn" data-section="terminal">
             <div class="eq-category__list-part-content">
               <div class="eq-category__list-part-content-title">ТЕРМИНАЛ ПРОДАЖИ БИЛЕТОВ</div>
             </div>
@@ -1348,7 +1351,7 @@
           </button>
         </li>
         <li class="eq-category__list-part">
-          <button class="eq-category__list-part-btn">
+          <button class="eq-category__list-part-btn" data-section="parking">
             <div class="eq-category__list-part-content">
               <div class="eq-category__list-part-content-title">ПАРКОВКА</div>
             </div>
@@ -1480,7 +1483,7 @@
           </button>
         </li>
         <li class="eq-category__list-part">
-          <button class="eq-category__list-part-btn">
+          <button class="eq-category__list-part-btn" data-section="reader">
             <div class="eq-category__list-part-content">
               <div class="eq-category__list-part-content-title">СЧИТЫВАТЕЛИ СОБСТВЕННОГО ПРОИЗВОДСТВА</div>
             </div>
@@ -1613,7 +1616,7 @@
           </button>
         </li>
         <li class="eq-category__list-part">
-          <button class="eq-category__list-part-btn">
+          <button class="eq-category__list-part-btn" data-section="turnik">
             <div class="eq-category__list-part-content">
               <div class="eq-category__list-part-content-title">ТУРНИКЕТЫ</div>
             </div>
@@ -2042,6 +2045,251 @@
       </ul>
     </div>
   </section>
+  <section class="eq-catalog" id="reader">
+    <div class="eq-catalog__title-section">
+      <div class="container">
+        <div class="eq-catalog__title">Считыватели штрих-кодов</div>
+      </div>
+    </div>
+    <div class="container eq__product-container">
+      <div class="eq-catalog_product-desc">
+        Считыватель является важным элементом работы организаторов выставок, музеев и концертных 
+        мероприятий. Устройство предоставляет возможность организации, идентификации 
+        и отслеживанию счетов-фактур. Компания TeleGreen рекомендует считыватель OR кодов в России.
+      </div>
+      <div class="eq-catalog_product-desc">
+        В каталоге нашего интернет-магазина возможно купить считыватель бесконтактных карт 
+        по выгодному предложению. Простое устройство обладает необходимыми функциями
+        для приобретения товара или билетов на мероприятия. Обеспечивается надежная работа 
+        без сложного технического обслуживания, доставка оборудования в удобное время.
+      </div>
+      <div class="eq__catalog-list-block">
+        <div class="eq__catalog-list-block-title eq-catalog__title">Считыватели производства TeleGreen</div>
+        <!-- <div class="eq__catalog-list-filter">
+          <div class="eq__catalog-filter-input">
+
+          </div>
+          <button class="eq__catalog-filter-btn">Применить</button>
+        </div> -->
+        <ul class="eq__catalog-list list-no-marker">
+          <li class="eq__catalog-list-part">
+            <a class="eq__catalog-list-part-img-block link">
+              <div class="eq__catalog-list-part-img-background">
+                <img src="../assets/img/controller-m5.jpg" alt="изображение товара">
+              </div>
+            </a>
+            <div class="eq__catalog-list-part-content-block">
+              <div class="eq__catalog-list-part-content-title">Контроллер - считыватель Telegreen M5</div>
+              <a class="eq__catalog-list-part-content-link link" href="">Подробнее</a>
+            </div>
+          </li>
+          <li class="eq__catalog-list-part">
+            <a class="eq__catalog-list-part-img-block link">
+              <div class="eq__catalog-list-part-img-background">
+                <img src="../assets/img/controller-m4.jpg" alt="изображение товара">
+              </div>
+            </a>
+            <div class="eq__catalog-list-part-content-block">
+              <div class="eq__catalog-list-part-content-title">Контроллер - считыватель Telegreen M4</div>
+              <a class="eq__catalog-list-part-content-link link" href="">Подробнее</a>
+            </div>
+          </li>
+          <li class="eq__catalog-list-part">
+            <a class="eq__catalog-list-part-img-block link">
+              <div class="eq__catalog-list-part-img-background">
+                <img src="../assets/img/controller-m3.jpg" alt="изображение товара">
+              </div>
+            </a>
+            <div class="eq__catalog-list-part-content-block">
+              <div class="eq__catalog-list-part-content-title">Контроллер - считыватель Telegreen M3</div>
+              <a class="eq__catalog-list-part-content-link link" href="">Подробнее</a>
+            </div>
+          </li>
+          <li class="eq__catalog-list-part">
+            <a class="eq__catalog-list-part-img-block link">
+              <div class="eq__catalog-list-part-img-background">
+                <img src="../assets/img/Слой 26.png" alt="изображение товара">
+              </div>
+            </a>
+            <div class="eq__catalog-list-part-content-block">
+              <div class="eq__catalog-list-part-content-title">Контроллер - считыватель Telegreen M2</div>
+              <a class="eq__catalog-list-part-content-link link" href="">Подробнее</a>
+            </div>
+          </li>
+          <li class="eq__catalog-list-part">
+            <a class="eq__catalog-list-part-img-block link">
+              <div class="eq__catalog-list-part-img-background">
+                <img src="../assets/img/Слой 26.png" alt="изображение товара">
+              </div>
+            </a>
+            <div class="eq__catalog-list-part-content-block">
+              <div class="eq__catalog-list-part-content-title">Контроллер - считыватель Telegreen M1</div>
+              <a class="eq__catalog-list-part-content-link link" href="">Подробнее</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+  <section class="eq-catalog" id="terminal">
+    <div class="eq-catalog__title-section">
+      <div class="container">
+        <div class="eq-catalog__title">Терминалы</div>
+      </div>
+    </div>
+    <div class="container eq__product-container">
+      <div class="eq-catalog_product-desc">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Suscipit totam, velit quasi, nisi voluptatibus adipisci repudiandae itaque rerum cumque, eos recusandae enim quisquam deserunt maiores nobis. Soluta consectetur enim similique.
+      </div>
+      <div class="eq-catalog_product-desc">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, iusto dignissimos inventore delectus, odio, ratione quo necessitatibus animi ullam ea eveniet adipisci aliquam veniam. Enim eveniet doloribus ullam ratione eaque.
+      </div>
+      <div class="eq__catalog-list-block">
+        <div class="eq__catalog-list-block-title eq-catalog__title">Терминалы производства TeleGreen</div>
+        <!-- <div class="eq__catalog-list-filter">
+          <div class="eq__catalog-filter-input">
+
+          </div>
+          <button class="eq__catalog-filter-btn">Применить</button>
+        </div> -->
+        <ul class="eq__catalog-list list-no-marker">
+          <li class="eq__catalog-list-part">
+            <a class="eq__catalog-list-part-img-block link">
+              <div class="eq__catalog-list-part-img-background">
+                <img src="../assets/img/terminal-tg03.jpg" alt="изображение товара">
+              </div>
+            </a>
+            <div class="eq__catalog-list-part-content-block">
+              <div class="eq__catalog-list-part-content-title">Терминал по продаже билетов Telegreen TG03</div>
+              <a class="eq__catalog-list-part-content-link link" href="">Подробнее</a>
+            </div>
+          </li>
+          <li class="eq__catalog-list-part">
+            <a class="eq__catalog-list-part-img-block link">
+              <div class="eq__catalog-list-part-img-background">
+                <img src="../assets/img/terminal-tg01.jpg" alt="изображение товара">
+              </div>
+            </a>
+            <div class="eq__catalog-list-part-content-block">
+              <div class="eq__catalog-list-part-content-title">Терминал по продаже билетов Telegreen TG01 </div>
+              <a class="eq__catalog-list-part-content-link link" href="">Подробнее</a>
+            </div>
+          </li>
+          <li class="eq__catalog-list-part">
+            <a class="eq__catalog-list-part-img-block link">
+              <div class="eq__catalog-list-part-img-background">
+                <img src="../assets/img/Слой 26.png" alt="изображение товара">
+              </div>
+            </a>
+            <div class="eq__catalog-list-part-content-block">
+              <div class="eq__catalog-list-part-content-title">Контроллер - считыватель Telegreen M2</div>
+              <a class="eq__catalog-list-part-content-link link" href="">Подробнее</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+  <section class="eq-catalog" id="parking">
+    <div class="eq-catalog__title-section">
+      <div class="container">
+        <div class="eq-catalog__title">Паркоматы</div>
+      </div>
+    </div>
+    <div class="container eq__product-container">
+      <div class="eq-catalog_product-desc">
+        Устройство представляет собой автоматический терминал по приеме денег и расчетов с клиентами. Это распространенное оборудование чаще всего применяется на платной парковке.
+        Оборудование интересно для установки на парковке перед музеем, концертным залом, офисным или выставочным комплексом, парком развлечением. Обеспечивается интуитивно понятное управление, быстрый расчет с владельцем автомобиля.   
+      </div>
+      <div class="eq-catalog_product-desc">
+        Предлагаем установку парковки с оптимальным набором опций. Обеспечивается техническое обслуживание оборудования, разработка подходящего программного обеспечения. 
+        У нас доступна установка паркоматов с необходимой функциональностью. Доступны автоматизированные процессы, возможен монтаж устройства со шлагбаумом.
+        В каталоге нашего интернет-магазина возможно купить паркомат в России.
+      </div>
+      <div class="eq__catalog-list-block">
+        <div class="eq__catalog-list-block-title eq-catalog__title">Паркоматы производства TeleGreen</div>
+        <!-- <div class="eq__catalog-list-filter">
+          <div class="eq__catalog-filter-input">
+
+          </div>
+          <button class="eq__catalog-filter-btn">Применить</button>
+        </div> -->
+        <ul class="eq__catalog-list list-no-marker">
+          <li class="eq__catalog-list-part">
+            <a class="eq__catalog-list-part-img-block link">
+              <div class="eq__catalog-list-part-img-background">
+                <img src="../assets/img/parkomat.jpg" alt="изображение товара">
+              </div>
+            </a>
+            <div class="eq__catalog-list-part-content-block">
+              <div class="eq__catalog-list-part-content-title">Парковочная Колонна Telegreen TG-P01S </div>
+              <a class="eq__catalog-list-part-content-link link" href="">Подробнее</a>
+            </div>
+          </li>
+          <li class="eq__catalog-list-part">
+            <a class="eq__catalog-list-part-img-block link">
+              <div class="eq__catalog-list-part-img-background">
+                <img src="../assets/img/Слой 26.png" alt="изображение товара">
+              </div>
+            </a>
+            <div class="eq__catalog-list-part-content-block">
+              <div class="eq__catalog-list-part-content-title">Контроллер - считыватель Telegreen M4</div>
+              <a class="eq__catalog-list-part-content-link link" href="">Подробнее</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+  <section class="eq-catalog" id="turnik">
+    <div class="eq-catalog__title-section">
+      <div class="container">
+        <div class="eq-catalog__title">Турникеты</div>
+      </div>
+    </div>
+    <div class="container eq__product-container">
+      <div class="eq-catalog_product-desc">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur asperiores laboriosam deleniti consequuntur dicta architecto facilis similique culpa ratione maiores, ipsum assumenda dolor quae, voluptatum maxime nostrum eius commodi enim!
+      </div>
+      <div class="eq-catalog_product-desc">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et laborum repellendus tempore libero? Culpa aperiam tempora officia, voluptatibus dignissimos quisquam, eius expedita explicabo alias illo, laboriosam accusamus aspernatur praesentium at.
+      </div>
+      <div class="eq__catalog-list-block">
+        <div class="eq__catalog-list-block-title eq-catalog__title">Турникеты производства TeleGreen</div>
+        <!-- <div class="eq__catalog-list-filter">
+          <div class="eq__catalog-filter-input">
+
+          </div>
+          <button class="eq__catalog-filter-btn">Применить</button>
+        </div> -->
+        <ul class="eq__catalog-list list-no-marker">
+          <li class="eq__catalog-list-part">
+            <a class="eq__catalog-list-part-img-block link">
+              <div class="eq__catalog-list-part-img-background">
+                <img src="../assets/img/tirniket.jpg" alt="изображение товара">
+              </div>
+            </a>
+            <div class="eq__catalog-list-part-content-block">
+              <div class="eq__catalog-list-part-content-title">Турникеты-триподы GA2-TM</div>
+              <a class="eq__catalog-list-part-content-link link" href="">Подробнее</a>
+            </div>
+          </li>
+          <li class="eq__catalog-list-part">
+            <a class="eq__catalog-list-part-img-block link">
+              <div class="eq__catalog-list-part-img-background">
+                <img src="../assets/img/Слой 26.png" alt="изображение товара">
+              </div>
+            </a>
+            <div class="eq__catalog-list-part-content-block">
+              <div class="eq__catalog-list-part-content-title">Контроллер - считыватель Telegreen M4</div>
+              <a class="eq__catalog-list-part-content-link link" href="">Подробнее</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+  
   <footer class="footer">
     <div class="container footer__container">
       <div class="footer__left-block">
@@ -2237,5 +2485,8 @@
   <script src="../assets/js/burger.js"></script>
   <script src='https://www.google.com/recaptcha/api.js'></script>
   <script src="../assets/js/triggerInit.js"></script>
+  <script src="../assets/js/open-catalog.js"></script>
+  <script src="../assets/js/btn-scroll-top.js"></script>
+  <script src="../assets/js/catalog-observe.js"></script>
 </body>
 </html>

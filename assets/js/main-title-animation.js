@@ -18,6 +18,8 @@ jQuery(document).ready(function($){
 
     const vacationTitle = $('.vacation__article-title')[0];
 
+    const catalogDesc = $('.eq-category__description')[0];
+
     if (topDesc) {
 
         topDesc.classList.remove('fromLeftOut');
@@ -69,5 +71,12 @@ jQuery(document).ready(function($){
     if (vacationTitle) {
       vacationTitle.classList.remove('fromLeftOut');
       vacationTitle.classList.add('fromLeftIn');
+    }
+
+    if (catalogDesc) {
+
+      catalogDesc.classList.remove('fromLeftOut');
+      catalogDesc.classList.add('fromLeftIn');
+
     }
 })
