@@ -1,0 +1,198 @@
+@import '../css/style.scss';
+@import '../css/keyframes.scss';
+@import '../css/sales.scss';
+
+
+.svg-mir {
+	.st0{fill:url(#SVGID_1_);}
+	.st1{fill:#FAEFF7;}
+	.st2{fill:#FFFFFF;}
+	.st3{fill:#E2DFEE;}
+	.st4{fill:#EAE8F5;}
+	.st5{fill:#B5B2D4;}
+	.st6{clip-path:url(#SVGID_3_);}
+	.st7{fill:#29A94E;}
+	.st8{fill:url(#SVGID_4_);}
+}
+
+.svg-visa {
+  .st0{fill:url(#SVGID_1_);}
+  .st1{fill:#FAEFF7;}
+  .st2{fill:#FFFFFF;}
+  .st3{fill:#E2DFEE;}
+  .st4{fill:#EAE8F5;}
+  .st5{fill:#B5B2D4;}
+  .st6{fill-rule:evenodd;clip-rule:evenodd;fill:#FFFFFF;}
+  .st7{fill-rule:evenodd;clip-rule:evenodd;fill:url(#SVGID_2_);}
+  .st8{fill-rule:evenodd;clip-rule:evenodd;fill:url(#SVGID_3_);}
+  .st9{fill-rule:evenodd;clip-rule:evenodd;fill:url(#SVGID_4_);}
+  .st10{fill-rule:evenodd;clip-rule:evenodd;fill:url(#SVGID_5_);}
+  .st11{fill-rule:evenodd;clip-rule:evenodd;fill:url(#SVGID_6_);}
+
+}
+
+.svg-jcb {
+  .st0{fill:#08559B;}
+  .st1{fill:#FAEFF7;}
+  .st2{fill:#FFFFFF;}
+  .st3{fill:#E2DFEE;}
+  .st4{fill:#EAE8F5;}
+  .st5{fill:#B5B2D4;}
+  .st6{fill-rule:evenodd;clip-rule:evenodd;fill:#08559B;}
+  .st7{fill-rule:evenodd;clip-rule:evenodd;fill:none;stroke:#08559B;stroke-width:2.9999;stroke-miterlimit:2.6131;}
+  .st8{fill-rule:evenodd;clip-rule:evenodd;fill:#FFFFFF;}
+  .st9{fill-rule:evenodd;clip-rule:evenodd;fill:#F7A710;}
+}
+
+.svg-mastercard {
+  .st0{fill:url(#SVGID_1_);}
+  .st1{fill:#FAEFF7;}
+  .st2{fill:#FFFFFF;}
+  .st3{fill:#E2DFEE;}
+  .st4{fill:#EAE8F5;}
+  .st5{fill:#B5B2D4;}
+  .st6{fill-rule:evenodd;clip-rule:evenodd;fill:#F0EFEB;}
+  .st7{fill-rule:evenodd;clip-rule:evenodd;fill:#020203;}
+  .st8{fill-rule:evenodd;clip-rule:evenodd;fill:#E41221;}
+  .st9{fill-rule:evenodd;clip-rule:evenodd;fill:#F69F1E;}
+  .st10{fill-rule:evenodd;clip-rule:evenodd;fill:#EB621D;}
+}
+
+.buyers-pay {
+  background-color: $font-color-white;
+  padding-top: 80px;
+  padding-bottom: 70px;
+
+  .buyers-pay__main-title-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: flex-end;
+    margin-bottom: 15px;
+  }
+
+  .buyers-pay__main-title {
+    padding: 0;
+    margin: 0;
+    font-size: 24px;
+    color: $font-color-dark-grey;
+    white-space: nowrap;
+  }
+
+  .buyers-pay__main-title-border {
+    height: 4px;
+    background-color: rgb(98, 98, 98);
+    width: 100%;
+    margin-bottom: 5px;
+    margin-left: 10px;
+  }
+
+  .buyers-pay-container {
+    display: grid;
+    grid-template-columns: 7% 93%;
+  }
+
+  .buyers-pay-container-left-border {
+    height: 75px;
+    width: 100%;
+    background-color: #626262;
+  }
+
+  .buyers-pay__content-block {
+    padding-left: 30px;
+    padding-top: 55px;
+  }
+
+  .buyers-pay__content-title {
+    font-size: 20px;
+    font-weight: 800;
+    color: $font-color-dark-grey;
+    margin-bottom: 45px;
+  }
+
+  .buyers-pay__content-desc {
+    font-size: 16px;
+    color: $font-color-dark-grey;
+    line-height: 25px;
+    width: 80%;
+  }
+
+  .buyers-pay__card-list {
+    display: grid;
+    grid-template-columns: 14% 14% 14% 14%;
+    grid-column-gap: 13%;
+    // justify-content: space-between;
+    padding-top: 35px;
+    margin-bottom: 80px;
+  }
+
+  .buyers-pay__card-list-part {
+    
+    position: relative;
+    bottom: 0px;
+    left: 0;
+    height: 90px;
+    svg {
+      // position: relative;
+      height: 100%;
+      width: 100%;
+      transform: rotate(320deg);
+    }
+
+    .buyers-pay__card-list-part-title {
+      position: absolute;
+      top: 95%;
+      left: 70%;
+      font-size: 16px;
+      line-height: 19px;
+      font-weight: 800;
+      color: $font-color-dark-grey;
+
+    }
+
+    &::after {
+      position: absolute;
+      content: '';
+      bottom: 28px;
+      left: 130px;
+      background: #a6a6a6;
+      transform: perspective(40em) translateY(50%) rotateX(60deg) scale(1.2, 0.4);
+      isolation: isolate;
+      transform-origin: 40em 5em;
+      box-shadow: -2em 0em 2em 1em #a6a6a6;
+      width: 50%;
+      // height: 5px;
+      // background-color: blue;      
+    }
+   }
+
+   .buyers-pay__process-list-part {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+   }
+
+   .buyers-pay__process-list-part:not(:last-child) {
+     margin-bottom: 20px;
+   }
+
+   .buyers-pay__process-list-part-text {
+    font-size: 16px;
+    line-height: 19px;
+    font-weight: 400;
+   }
+
+   .buyers-pay__process-list-part-marker {
+    padding-right: 5px;
+    background-color: rgb(98, 98, 98);
+    height: 29px;
+    margin-right: 25px;
+    margin-top: 5px;
+   }
+
+
+  }
+
+
+
+

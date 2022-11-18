@@ -19,6 +19,11 @@ jQuery(document).ready(function($){
     const vacationTitle = $('.vacation__article-title')[0];
 
     const catalogDesc = $('.eq-category__description')[0];
+    const buyersListTitle = Array.from($('.buyers__list-title'));
+
+    const buyersPayTitle = $('.buyers-pay__main-title-container')[0];
+
+
 
     if (topDesc) {
 
@@ -78,5 +83,18 @@ jQuery(document).ready(function($){
       catalogDesc.classList.remove('fromLeftOut');
       catalogDesc.classList.add('fromLeftIn');
 
+    }
+
+    if (buyersListTitle.length > 0) {
+      buyersListTitle.forEach(el => {
+        el.classList.remove('fromRightOut');
+        el.classList.add('fromRightIn');
+
+      })
+    }
+
+    if (buyersPayTitle) {
+      buyersPayTitle.classList.remove('fromRightOut');
+      buyersPayTitle.classList.add('fromRightIn');
     }
 })

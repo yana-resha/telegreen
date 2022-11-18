@@ -2,6 +2,9 @@ document.addEventListener('DOMContentLoaded', () => {
   const scrollBtn = document.querySelector('.scroll-to-top');
   if (scrollBtn) {
     scrollBtn.style.zIndex = 50;
+    scrollBtn.addEventListener('click', () => {
+      window.scrollTo({ top: 0, behavior: 'smooth' })
+    })
   }
   if (window.pageYOffset > 300 && scrollBtn) {
     scrollBtn.classList.add('block')
@@ -19,7 +22,4 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   })
 
-  scrollBtn.addEventListener('click', () => {
-    window.scrollTo({ top: 0, behavior: 'smooth' })
-  })
 })

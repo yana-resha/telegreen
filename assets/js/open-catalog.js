@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const catalogSections = [...Array.from($('.eq-catalog'))];
 
     const scrollBtn = $('.scroll-to-category')[0];
-    scrollBtn.style.zIndex = '50';
+    if (scrollBtn) scrollBtn.style.zIndex = '50';
 
     function scrollToCategory () {
 
@@ -17,10 +17,13 @@ document.addEventListener('DOMContentLoaded', () => {
     
     }
 
-    scrollBtn.addEventListener('click', () => {
-      scrollToCategory();
-      scrollBtn.classList.remove('block')
-    })
+    if (scrollBtn) {
+
+      scrollBtn.addEventListener('click', () => {
+        scrollToCategory();
+        scrollBtn.classList.remove('block')
+      })
+    }
 
 
     const btns = [...Array.from($('.eq-category__list-part-btn'))];
