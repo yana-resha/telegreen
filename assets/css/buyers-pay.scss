@@ -121,7 +121,6 @@
     display: grid;
     grid-template-columns: 14% 14% 14% 14%;
     grid-column-gap: 13%;
-    // justify-content: space-between;
     padding-top: 35px;
     margin-bottom: 80px;
   }
@@ -189,10 +188,361 @@
     margin-right: 25px;
     margin-top: 5px;
    }
+}
 
+@media (max-width:1060px) {
 
+  .buyers-pay .buyers-pay__card-list-part::after {
+    bottom: 35px;
   }
 
+}
 
 
+@media (max-width:1024px) {
 
+  .buyers-pay .buyers-pay__card-list-part::after {
+    bottom: 42px;
+  }
+
+  .buyers-pay .buyers-pay__card-list-part .buyers-pay__card-list-part-title {
+    top: 85%;
+  }
+ }
+
+
+ @media (max-width:950px) {
+
+  .buyers-pay__hero-title {
+    width: 100%;
+  }
+
+  .buyers-pay__hero-desc {
+    width: 75%;
+  }
+
+  .buyers-pay .buyers-pay-container {
+    display: grid;
+    grid-template-columns: 6% 94%;
+  }
+
+  .buyers-pay .buyers-pay-container-left-border {
+    height: 70px;
+  }
+
+  .buyers-pay .buyers-pay__content-block {
+    padding-left: 20px;
+    padding-top: 50px;
+  }
+
+  .buyers-pay .buyers-pay__content-title {
+    margin-bottom: 20px;
+  }
+
+  .buyers-pay .buyers-pay__card-list {
+
+    padding-top: 30px;
+    margin-bottom: 50px;
+  }
+
+  .buyers-pay .buyers-pay__content-desc {
+    width: 100%;
+  }
+
+  .buyers-pay {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+}
+
+@media (max-width:900px) {
+
+  .buyers-pay .buyers-pay__content-title {
+    font-size: 18px;
+  }
+
+  .buyers-pay .buyers-pay-container-left-border {
+    height: 60px;
+  }
+
+  .buyers-pay .buyers-pay__content-block {
+    padding-top: 40px;
+  }
+
+  .buyers-pay .buyers-pay__card-list-part .buyers-pay__card-list-part-title {
+    font-size: 14px;
+  }
+
+  .buyers-pay .buyers-pay__card-list-part::after {
+    bottom: 45px;
+  }
+
+}
+
+@media (max-width:850px) {
+
+  .buyers-pay .buyers-pay-container {
+    grid-template-columns: 100%;
+  }
+
+  .buyers-pay-container-left {
+    display: none;
+  }
+
+  .buyers-pay .buyers-pay__content-block {
+    padding-top: 0;
+  }
+
+  .buyers-pay .buyers-pay__main-title-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: flex-end;
+    margin-bottom: 35px
+  }
+
+  .buyers-pay__hero-desc {
+    width: 90%;
+  }
+ }
+
+ @media (max-width:800px) { 
+
+  .buyers-pay .buyers-pay__card-list-part::after {
+    bottom: 50px;
+    left: 150px;
+    width: 40%;
+  }
+
+  .buyers-pay .buyers-pay__card-list-part .buyers-pay__card-list-part-title {
+    top: 80%;
+  }
+
+  .buyers-pay .buyers-pay__process-list-part-marker {
+    padding-right: 4px;
+    height: 35px;
+    margin-right: 20px;
+  }
+}
+
+@media (max-width:750px) {
+
+  .buyers-pay .buyers-pay__main-title-container {
+    margin-bottom: 25px;
+  }
+
+  .buyers-pay .buyers-pay__content-block {
+    padding-left: 0px;
+  }
+}
+
+
+@media (max-width:700px) {
+
+  .buyers-pay {
+    padding-top: 30px;
+  }
+
+  .buyers-pay .buyers-pay__content-title {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+
+  .buyers-pay .buyers-pay__content-desc {
+    font-size: 14px;
+    line-height: 22px;
+  }
+
+  .buyers-pay .buyers-pay__process-list-part-text {
+    font-size: 14px;
+  }
+
+  .buyers-pay .buyers-pay__card-list-part::after {
+    bottom: 60px;
+    width: 30%;
+  }
+
+  .buyers-pay .buyers-pay__card-list-part .buyers-pay__card-list-part-title {
+    top: 120%;
+    left: 0;
+  }  
+
+  .buyers-pay .buyers-pay__card-list {
+    grid-template-columns: 15% 15% 15% 15%;
+    justify-content: space-between;
+    margin-bottom: 80px;
+    padding-top: 10px;
+  }
+
+  .buyers-pay .buyers-pay__card-list-part::after {
+    bottom: 55px;
+    width: 40%;
+  }
+
+  .buyers-pay .buyers-pay__main-title-border {
+    height: 2px;
+    margin-left: 5px;
+  }
+
+  .buyers-pay .buyers-pay__main-title {
+    font-size: 22px;
+  }
+
+  .buyers-pay .buyers-pay__main-title-container {
+    margin-bottom: 20px;
+  }
+}
+
+
+@media (max-width:650px) { 
+
+  .buyers-pay .buyers-pay__card-list-part::after {
+    bottom: 60px;
+    width: 30%;
+  }
+
+  .buyers-pay .buyers-pay__card-list {
+    margin-bottom: 70px;
+  }
+
+}
+
+
+@media (max-width:550px) {
+
+  .buyers-pay .buyers-pay__card-list-part::after {
+    bottom: 65px;
+  }
+
+  .buyers-pay .buyers-pay__card-list-part .buyers-pay__card-list-part-title {
+   
+    font-size: 12px;
+    line-height: 16px;
+    left: -20%;
+  }
+
+  .buyers-pay .buyers-pay__main-title {
+    font-size: 20px;
+  }
+
+  .buyers-pay .buyers-pay__main-title-container {
+    margin-bottom: 15px;
+  }
+
+  .buyers-pay .buyers-pay__content-title {
+    font-size: 14px;
+    margin-bottom: 5px;
+  }
+
+  .buyers-pay .buyers-pay__content-desc {
+    line-height: 20px;
+  }
+
+  .buyers-pay .buyers-pay__process-list-part:not(:last-child) {
+    margin-bottom: 10px;
+  }
+
+  .buyers-pay .buyers-pay__process-list-part-marker {
+    padding-right: 3px;
+    height: 25px;
+    margin-right: 15px;
+    margin-top: 3px;
+  }
+}
+
+@media (max-width:500px) {
+
+  .buyers-pay .buyers-pay__card-list-part::after {
+    bottom: 70px;
+    width: 20%;
+ }
+
+ .buyers-pay .buyers-pay__card-list-part .buyers-pay__card-list-part-title {
+  top: 110%;
+ }
+}
+
+@media (max-width:450px) {
+
+  .buyers-pay .buyers-pay__process-list-part-marker {
+    padding-right: 3px;
+    height: auto;
+    margin-right: 15px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  } 
+
+  .buyers-pay {
+    padding-bottom: 30px;
+  }
+
+  .buyers-pay .buyers-pay__card-list-part::after {
+    bottom: 75px;
+  }
+
+  .buyers-pay .buyers-pay__card-list-part .buyers-pay__card-list-part-title {
+    top: 100%;
+  } 
+
+  .buyers-pay .buyers-pay__card-list {
+    margin-bottom: 50px;
+  }
+}
+
+@media (max-width:400px) { 
+
+  .buyers-pay .buyers-pay__card-list-part::after {
+    bottom: 80px;
+  }
+
+  .buyers-pay .buyers-pay__card-list-part .buyers-pay__card-list-part-title {
+    top: 90%;
+  }
+
+  .buyers-pay .buyers-pay__card-list {
+    padding-top: 0;
+  }
+
+  .buyers-pay .buyers-pay__card-list-part::after {
+    width: 10%;
+  }
+
+  .buyers-pay .buyers-pay__card-list {
+    margin-bottom: 40px;
+  }
+}
+
+@media (max-width:391px) { 
+
+  .buyers-pay .buyers-pay__card-list {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .buyers-pay .buyers-pay__card-list-part .buyers-pay__card-list-part-title {
+    left: -30%;
+  } 
+ }
+
+ 
+@media (max-width:365px) {
+  .buyers-pay .buyers-pay__card-list-part::after {
+    width: 5%;
+  }
+
+  .buyers-pay .buyers-pay__card-list-part .buyers-pay__card-list-part-title {
+    font-size: 10px;
+  }
+
+}
+
+@media (max-width:350px) {
+
+  .buyers-pay .buyers-pay__main-title-border {
+    display: none;
+  }
+
+  .buyers-pay .buyers-pay__main-title {
+    font-size: 18px;
+}
+}

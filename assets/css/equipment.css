@@ -9026,7 +9026,7 @@ body {
 }
 @media (max-width: 469px) {
   .eq-catalog .eq__catalog-list-part-img-background {
-    height: 150px;
+    height: 170px;
     padding: 0;
   }
   .eq-catalog .eq__catalog-list-part-content-title {
@@ -9096,5 +9096,11 @@ body {
     font-size: 12px;
     text-align: start;
     border-bottom: none;
+  }
+}
+@media (max-width: 360px) {
+  .eq-catalog .eq__catalog-list-part-img-background {
+    height: 160px;
+    padding: 0;
   }
 }/*# sourceMappingURL=equipment.css.map */
