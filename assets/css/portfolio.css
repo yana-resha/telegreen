@@ -8556,6 +8556,9 @@ body {
   .portfolio-page .project__title {
     font-size: 27px;
   }
+  .portfolio-page-swiper {
+    height: 650px;
+  }
 }
 @media (max-width: 450px) {
   .portfolio__description-block-content {

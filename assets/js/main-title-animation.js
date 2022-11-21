@@ -23,6 +23,9 @@ jQuery(document).ready(function($){
 
     const buyersPayTitle = $('.buyers-pay__main-title-container')[0];
 
+    const faqTitle = $('.faq__title-container')[0];
+    const faqDesc = $('.faq__desc-container')[0];
+
 
 
     if (topDesc) {
@@ -96,5 +99,15 @@ jQuery(document).ready(function($){
     if (buyersPayTitle) {
       buyersPayTitle.classList.remove('fromRightOut');
       buyersPayTitle.classList.add('fromRightIn');
+    }
+
+    if (faqTitle) {
+      faqTitle.classList.remove('fromRightOut');
+      faqTitle.classList.add('fromRightIn');
+    }
+
+    if (faqDesc) {
+      faqDesc.classList.remove('fromLeftOut');
+      faqDesc.classList.add('fromLeftIn');
     }
 })
