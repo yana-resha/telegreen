@@ -1284,7 +1284,7 @@ body {
       background: rgb(64, 64, 64);
       opacity: 0.52;
       z-index: 150;
-      transition: background-color 0.3s ease-in-out;
+      transition: background-color 0.3s ease-in-out, opacity 0.3s ease-in-out;
     }
 
 
@@ -1326,6 +1326,8 @@ body {
     font-size: 27px;
     padding-left: 35px;
     padding-right: 35px;
+    word-wrap: break-word;
+    width: 100%;
   }
 
 

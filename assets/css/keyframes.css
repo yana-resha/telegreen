@@ -262,6 +262,34 @@
     opacity: 1;
   }
 }
+@-webkit-keyframes fadeInGrid {
+  0% {
+    display: none;
+    opacity: 0;
+  }
+  1% {
+    display: grid;
+    opacity: 0;
+  }
+  100% {
+    display: grid;
+    opacity: 1;
+  }
+}
+@keyframes fadeInGrid {
+  0% {
+    display: none;
+    opacity: 0;
+  }
+  1% {
+    display: grid;
+    opacity: 0;
+  }
+  100% {
+    display: grid;
+    opacity: 1;
+  }
+}
 @-webkit-keyframes letterUp {
   0% {
     transform: translateY(100%);

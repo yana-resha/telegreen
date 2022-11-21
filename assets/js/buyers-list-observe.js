@@ -49,7 +49,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const buyersListPartPay = [...Array.from($('.buyers-pay__process-list-part'))];
 
-    console.log(buyersListPartPay)
     const createObserverPay = () => {
       // создаем экземпляр IntersectionObserver
       const observer = new IntersectionObserver(
