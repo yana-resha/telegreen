@@ -2591,8 +2591,9 @@ body {
 
   .scroll-to-top {
     font-size: 40px;
-    right: auto;
-    left: 93%;
+    right: 0px;  
+    padding: 0;
+    margin: 0;
   }
 
   .hero__title {
