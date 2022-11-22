@@ -26,6 +26,8 @@ jQuery(document).ready(function($){
     const faqTitle = $('.faq__title-container')[0];
     const faqDesc = $('.faq__desc-container')[0];
 
+    const blogPageTitle = $('.blog-page__container-title')[0]
+
 
 
     if (topDesc) {
@@ -109,5 +111,12 @@ jQuery(document).ready(function($){
     if (faqDesc) {
       faqDesc.classList.remove('fromLeftOut');
       faqDesc.classList.add('fromLeftIn');
+    }
+
+    if (blogPageTitle) {
+
+      blogPageTitle.classList.remove('fromRightOut');
+      blogPageTitle.classList.add('fromRightIn');
+
     }
 })

@@ -262,6 +262,34 @@
     opacity: 1;
   }
 }
+@-webkit-keyframes fadeInGrid {
+  0% {
+    display: none;
+    opacity: 0;
+  }
+  1% {
+    display: grid;
+    opacity: 0;
+  }
+  100% {
+    display: grid;
+    opacity: 1;
+  }
+}
+@keyframes fadeInGrid {
+  0% {
+    display: none;
+    opacity: 0;
+  }
+  1% {
+    display: grid;
+    opacity: 0;
+  }
+  100% {
+    display: grid;
+    opacity: 1;
+  }
+}
 @-webkit-keyframes letterUp {
   0% {
     transform: translateY(100%);
@@ -826,6 +854,20 @@
     opacity: 1;
   }
 }
+@keyframes fadeInGrid {
+  0% {
+    display: none;
+    opacity: 0;
+  }
+  1% {
+    display: grid;
+    opacity: 0;
+  }
+  100% {
+    display: grid;
+    opacity: 1;
+  }
+}
 @keyframes letterUp {
   0% {
     transform: translateY(100%);
@@ -2229,7 +2271,7 @@ body {
   background: rgb(64, 64, 64);
   opacity: 0.52;
   z-index: 150;
-  transition: background-color 0.3s ease-in-out;
+  transition: background-color 0.3s ease-in-out, opacity 0.3s ease-in-out;
 }
 .project__swiper-slide-link img {
   position: absolute;
@@ -2259,6 +2301,8 @@ body {
   font-size: 27px;
   padding-left: 35px;
   padding-right: 35px;
+  word-wrap: break-word;
+  width: 100%;
 }
 .project__button-prev, .project__button-next {
   width: 70px !important;
@@ -4226,6 +4270,20 @@ body {
     opacity: 1;
   }
 }
+@keyframes fadeInGrid {
+  0% {
+    display: none;
+    opacity: 0;
+  }
+  1% {
+    display: grid;
+    opacity: 0;
+  }
+  100% {
+    display: grid;
+    opacity: 1;
+  }
+}
 @keyframes letterUp {
   0% {
     transform: translateY(100%);
@@ -4976,6 +5034,20 @@ body {
     opacity: 1;
   }
 }
+@keyframes fadeInGrid {
+  0% {
+    display: none;
+    opacity: 0;
+  }
+  1% {
+    display: grid;
+    opacity: 0;
+  }
+  100% {
+    display: grid;
+    opacity: 1;
+  }
+}
 @keyframes letterUp {
   0% {
     transform: translateY(100%);
@@ -5321,6 +5393,20 @@ body {
   }
   100% {
     display: flex;
+    opacity: 1;
+  }
+}
+@keyframes fadeInGrid {
+  0% {
+    display: none;
+    opacity: 0;
+  }
+  1% {
+    display: grid;
+    opacity: 0;
+  }
+  100% {
+    display: grid;
     opacity: 1;
   }
 }
@@ -6727,7 +6813,7 @@ body {
   background: rgb(64, 64, 64);
   opacity: 0.52;
   z-index: 150;
-  transition: background-color 0.3s ease-in-out;
+  transition: background-color 0.3s ease-in-out, opacity 0.3s ease-in-out;
 }
 .project__swiper-slide-link img {
   position: absolute;
@@ -6757,6 +6843,8 @@ body {
   font-size: 27px;
   padding-left: 35px;
   padding-right: 35px;
+  word-wrap: break-word;
+  width: 100%;
 }
 .project__button-prev, .project__button-next {
   width: 70px !important;
@@ -8724,6 +8812,20 @@ body {
     opacity: 1;
   }
 }
+@keyframes fadeInGrid {
+  0% {
+    display: none;
+    opacity: 0;
+  }
+  1% {
+    display: grid;
+    opacity: 0;
+  }
+  100% {
+    display: grid;
+    opacity: 1;
+  }
+}
 @keyframes letterUp {
   0% {
     transform: translateY(100%);
@@ -9471,6 +9573,20 @@ body {
   }
   100% {
     display: flex;
+    opacity: 1;
+  }
+}
+@keyframes fadeInGrid {
+  0% {
+    display: none;
+    opacity: 0;
+  }
+  1% {
+    display: grid;
+    opacity: 0;
+  }
+  100% {
+    display: grid;
     opacity: 1;
   }
 }
@@ -10877,7 +10993,7 @@ body {
   background: rgb(64, 64, 64);
   opacity: 0.52;
   z-index: 150;
-  transition: background-color 0.3s ease-in-out;
+  transition: background-color 0.3s ease-in-out, opacity 0.3s ease-in-out;
 }
 .project__swiper-slide-link img {
   position: absolute;
@@ -10907,6 +11023,8 @@ body {
   font-size: 27px;
   padding-left: 35px;
   padding-right: 35px;
+  word-wrap: break-word;
+  width: 100%;
 }
 .project__button-prev, .project__button-next {
   width: 70px !important;
@@ -13150,6 +13268,7 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
+  border-radius: 50%;
   -o-object-fit: cover;
      object-fit: cover;
   filter: sepia(0);
@@ -13722,6 +13841,20 @@ body {
   }
   100% {
     display: flex;
+    opacity: 1;
+  }
+}
+@keyframes fadeInGrid {
+  0% {
+    display: none;
+    opacity: 0;
+  }
+  1% {
+    display: grid;
+    opacity: 0;
+  }
+  100% {
+    display: grid;
     opacity: 1;
   }
 }
@@ -15128,7 +15261,7 @@ body {
   background: rgb(64, 64, 64);
   opacity: 0.52;
   z-index: 150;
-  transition: background-color 0.3s ease-in-out;
+  transition: background-color 0.3s ease-in-out, opacity 0.3s ease-in-out;
 }
 .project__swiper-slide-link img {
   position: absolute;
@@ -15158,6 +15291,8 @@ body {
   font-size: 27px;
   padding-left: 35px;
   padding-right: 35px;
+  word-wrap: break-word;
+  width: 100%;
 }
 .project__button-prev, .project__button-next {
   width: 70px !important;
