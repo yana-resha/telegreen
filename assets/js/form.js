@@ -3,6 +3,10 @@ document.addEventListener('DOMContentLoaded', () => {
   jQuery(document).ready(function($){
 
     const form = $('form')[0];
+
+    const formData = [];
+
+
     form.addEventListener('submit', (e) => {
       e.preventDefault();
       
@@ -11,16 +15,22 @@ document.addEventListener('DOMContentLoaded', () => {
       const allInput = Array.from($(form).find('.important__form-input'));
       console.log(allInput)
       allInput.forEach(el => {
+
         if (el.classList.contains('tel')) {
           console.log(el.value)
+        }
+
+        if (el.classList.contains('email') && !el.value.includes('@')) {
+          console.log('опасность')
+          el.style.border = '1px solid red'
         }
       })
 
 
       
 
-      // Работа с виджетом recaptcha
-      // 1. Получить ответ гугл капчи
+    // Работа с виджетом recaptcha
+    // 1. Получить ответ гугл капчи
      var captcha = grecaptcha.getResponse();
    
    // 2. Если ответ пустой, то выводим сообщение о том, что пользователь не прошёл тест.
@@ -34,7 +44,7 @@ document.addEventListener('DOMContentLoaded', () => {
    }
    
    // 3. Если форма валидна и длина капчи не равно пустой строке, то отправляем форму на сервер (AJAX)
-   if ((formValid) && (captcha.length) && (inputValid)) {
+   if ((captcha.length) && (inputValid)) {
     
      // добавить в formData значение 'g-recaptcha-response'=значение_recaptcha
      formData.append('g-recaptcha-response', captcha);
@@ -45,10 +55,10 @@ document.addEventListener('DOMContentLoaded', () => {
    // Сбрасываем виджет reCaptcha
    grecaptcha.reset();
    // Если существует свойство msg у объекта $data, то...
-   if ($data.msg) {
-     // вывести её в элемент у которого id=recaptchaError
-     $('#recaptchaError').text($data.msg);
-   }
+  //  if ($data.msg) {
+  //    // вывести её в элемент у которого id=recaptchaError
+  //    $('#recaptchaError').text($data.msg);
+  //  }
        })
        
      });

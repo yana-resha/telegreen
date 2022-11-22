@@ -3366,7 +3366,9 @@ body {
   }
   .scroll-to-top {
     font-size: 40px;
-    right: 0px;
+    right: 10px;
+    padding: 0;
+    margin: 0;
   }
   .hero__title {
     font-size: 30px;
@@ -7909,7 +7911,9 @@ body {
   }
   .scroll-to-top {
     font-size: 40px;
-    right: 0px;
+    right: 10px;
+    padding: 0;
+    margin: 0;
   }
   .hero__title {
     font-size: 30px;
@@ -12090,7 +12094,9 @@ body {
   }
   .scroll-to-top {
     font-size: 40px;
-    right: 0px;
+    right: 10px;
+    padding: 0;
+    margin: 0;
   }
   .hero__title {
     font-size: 30px;
@@ -16144,7 +16150,9 @@ body {
   }
   .scroll-to-top {
     font-size: 40px;
-    right: 0px;
+    right: 10px;
+    padding: 0;
+    margin: 0;
   }
   .hero__title {
     font-size: 30px;
@@ -20325,7 +20333,9 @@ body {
   }
   .scroll-to-top {
     font-size: 40px;
-    right: 0px;
+    right: 10px;
+    padding: 0;
+    margin: 0;
   }
   .hero__title {
     font-size: 30px;
@@ -24104,7 +24114,9 @@ body {
   }
   .scroll-to-top {
     font-size: 40px;
-    right: 0px;
+    right: 10px;
+    padding: 0;
+    margin: 0;
   }
   .hero__title {
     font-size: 30px;
@@ -28285,7 +28297,9 @@ body {
   }
   .scroll-to-top {
     font-size: 40px;
-    right: 0px;
+    right: 10px;
+    padding: 0;
+    margin: 0;
   }
   .hero__title {
     font-size: 30px;
@@ -32209,7 +32223,9 @@ body {
   }
   .scroll-to-top {
     font-size: 40px;
-    right: 0px;
+    right: 10px;
+    padding: 0;
+    margin: 0;
   }
   .hero__title {
     font-size: 30px;
@@ -33226,6 +33242,11 @@ body {
   }
 }
 @media (max-width: 450px) {
+  .blog-post .blog-post__title-border {
+    width: 10%;
+    margin-right: 5px;
+    height: 3px;
+  }
   .blog-post .blog-post__content-img {
     height: 300px;
     margin-right: 0;

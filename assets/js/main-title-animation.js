@@ -26,7 +26,9 @@ jQuery(document).ready(function($){
     const faqTitle = $('.faq__title-container')[0];
     const faqDesc = $('.faq__desc-container')[0];
 
-    const blogPageTitle = $('.blog-page__container-title')[0]
+    const blogPageTitle = $('.blog-page__container-title')[0];
+
+    const contactPageTitle = $('.contact-page__title-container')[0];
 
 
 
@@ -117,6 +119,10 @@ jQuery(document).ready(function($){
 
       blogPageTitle.classList.remove('fromRightOut');
       blogPageTitle.classList.add('fromRightIn');
+    }
 
+    if (contactPageTitle) {
+      contactPageTitle.classList.remove('fromRightOut');
+      contactPageTitle.classList.add('fromRightIn');
     }
 })

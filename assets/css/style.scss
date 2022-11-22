@@ -154,6 +154,12 @@ $main-title-size: 40px;
 $btn-grey: rgba(160, 165, 168, 1);
 $btn-green: rgba(68, 172, 51, 1);
 
+.text-danger {
+  font-size: 14px;
+  margin-bottom: 10px;
+  color: $font-color-white;
+}
+
 .theatre {
 	.st0{fill:#010202;}
 	.st1{fill:#47AB34;}
@@ -1699,7 +1705,7 @@ body {
   }
 
   &__form-input {
-    background-color: $font-color-white;
+    background-color: $font-color-white!important;
     padding: 10px 20px;
     margin-bottom: 20px;
     outline: none;
@@ -1711,6 +1717,7 @@ body {
   }
 
   &__form-input::placeholder {
+    background-color: $font-color-white!important;
     font-family: 'monserrat';
     font-size: 14px;
     font-weight: 400;
@@ -2591,7 +2598,7 @@ body {
 
   .scroll-to-top {
     font-size: 40px;
-    right: 0px;  
+    right: 10px;  
     padding: 0;
     margin: 0;
   }
@@ -2970,13 +2977,26 @@ body {
     font-size: 12px;
   }
 
+  .blog__btn {
+    font-size: 14px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  .important {
+    padding-top: 15px;
+    padding-bottom: 30px;
+  }
+
   .important__title {
     font-size: 16px;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
   }
 
   .important__description {
-    font-size: 12px;
+    font-size: 13px;
     font-weight: 400;
     line-height: 16px;
     text-align: start;

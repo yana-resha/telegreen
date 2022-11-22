@@ -322,6 +322,12 @@
 
  @media (max-width: 450px) {
 
+  .blog-post .blog-post__title-border {
+    width: 10%;
+    margin-right: 5px;
+    height: 3px;
+  }
+
   .blog-post .blog-post__content-img {
     height: 300px;
     margin-right: 0;
