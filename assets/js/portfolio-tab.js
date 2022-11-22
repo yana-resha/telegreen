@@ -12,7 +12,7 @@ jQuery(document).ready(function($){
       el.addEventListener('click', (e) => {
         const elAttr = $(el).attr('data-project');
         openProjectSlide.forEach(element => element.classList.remove('active'));
-        openProjectDesc.forEach(element => element.classList.remove('active'))
+        openProjectDesc.forEach(element => element.classList.remove('active'));
         el.classList.add('active');
         const desc = openProjectDesc.filter(desc => $(desc).attr('data-project-desc') == elAttr);
         desc[0].classList.add('active');
@@ -25,23 +25,20 @@ jQuery(document).ready(function($){
         el.classList.add('active')
       }
     })
+
+    if (window.screen.availWidth < 577) {
+      const swiper = $('.portfolio-page-swiper')[0];
+      swiper.addEventListener('mousemove', () => {
+        console.log('fkfk')
+        const activeSlide = $('.project__swiper-slide.swiper-slide-active')[0];
+        const activeBtnSlide = $(activeSlide).find('.project__swiper-slide-link')[0];
+        const elAttr = $(activeBtnSlide).attr('data-project');
+        openProjectDesc.forEach(element => element.classList.remove('active'));
+        const desc = openProjectDesc.filter(desc => $(desc).attr('data-project-desc') == elAttr);
+        desc[0].classList.add('active');
+      })
+
+    }
+
   }
-    // .attr('data-project')
-
-
-  // if (openProjectSlide[0]) {
-
-  //   const allOpenProjectSlide = Array.from($('.portfolio__swiper-btn'));
-
-  //   allOpenProjectSlide.forEach(el => {
-  //     el.addEventListener('click', (e) => {
-  //       console.log(el)
-  //     })
-  //   })
-
-  // }
-
-  
-
-
  })

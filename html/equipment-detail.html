@@ -49,7 +49,7 @@
             </ul>
           </li>
           <li class="header__nav-list-part">
-            <a href=""  class="nav-btn link">АКЦИИ</a>
+            <a href="./sales.html"  class="nav-btn link">АКЦИИ</a>
             <div class="header__nav-border-hover"></div>
           </li>
           <li class="header__nav-list-part">
@@ -159,7 +159,7 @@
           </div>
           </div>
           <div class="eq-detail__detail-btn-container">
-            <button class="eq-detail__detail-btn">Заказать консультацию</button>
+            <button class="eq-detail__detail-btn callback">Заказать консультацию</button>
           </div>
         </div>
         <div class="eq-detail__detail-content">
@@ -464,6 +464,23 @@
       </div>
     </div>
   </footer>
+  <div class="modal-window">
+    <div class="modal-content">
+      <form class="important__form">
+        <legend class="important__form-legend-title">Оставить заявку на подключение</legend>
+        <input class="important__form-input input name" type="text"  autocomplete="off" required name="name" aria-label="введите имя" placeholder="имя*">
+        <input class="important__form-input input org" type="text"  autocomplete="off" required name="name" aria-label="введите имя" placeholder="название организации*">
+        <input type="tel" required name="phone" class="important__form-input input tel"  autocomplete="off" aria-label="введите номер телефона" data-validate-field="tel" data-validate-rules="phone" placeholder="телефон*">
+        <input type="text" required name="email" class="important__form-input email" aria-label="введите email" data-validate-field="tel" data-validate-rules="phone" placeholder="e-mail*">
+        <textarea  autocomplete="off" required  class="important__form-input input textaria" placeholder="Укажите описание своего проекта*"></textarea>
+        
+        <div class="g-recaptcha" style="transform:scale(0.7); transform-origin:0;" data-sitekey="6Lf7ZOwiAAAAAACjvs-Qqd4D3PF-WlsTZU-sAv1v"></div>
+        
+        <div class="text-danger" id="recaptchaError"></div>
+        <button class="important__form-input-btn-submit" type="submit">Отправить</button>
+      </form>
+    </div>
+  </div>
   <script src="../assets/js/observer.js"></script>
   <script src="../assets/js/main-title-animation.js"></script>
   <script src="../assets/js/dropdown-nav.js"></script>
@@ -481,5 +498,9 @@
   <script src="../assets/js/catalog-observe.js"></script>
   <script src="../assets/js/eq-detail-swiper.js"></script>
   <script src="../assets/js/eq-other-product-swiper.js"></script>
+  <script src="../assets/js/modal-window.js"></script>
+  <script src="../assets/js/form.js"></script>
+  <script src="../assets/js/jquery.maskedinput.min.js"></script>
+  <script src="../assets/js/phone-mask.js"></script>
 </body>
 </html>

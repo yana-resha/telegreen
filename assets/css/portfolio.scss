@@ -65,6 +65,18 @@
   line-height: 19px;
 }
 
+.portfolio-page__project-swiper-pagination {
+  .swiper-pagination-bullet {
+    background: white !important;
+    opacity: 0.5;
+  }
+
+  .swiper-pagination-bullet-active {
+    background: white !important;
+    opacity: 0.8;
+  }
+}
+
 .portfolio__description-block-img {
 
   .portfolio__desc-swiper {
@@ -367,7 +379,7 @@
   }
 
   .portfolio-page-swiper {
-    height: 650px;
+    height: 600px;
   }
 }
 
