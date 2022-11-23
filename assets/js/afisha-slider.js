@@ -28,7 +28,7 @@ var swiper = new Swiper(".afisha__calendar-swiper", {
     },
 
     1: {
-      spaceBetween: 0,
+      spaceBetween: 10,
     },
   }
 });

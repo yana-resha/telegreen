@@ -1,8 +1,8 @@
 
 @import './keyframes.scss';
 @import './mixin';
-@import './sales.scss';
 @import './style.scss';
+@import './sales.scss';
 
 .portfolio__swiper-btn {
   outline: none;
@@ -195,14 +195,7 @@
     width: 100%;
   }
 
-  .portfolio-page__hero-desc {
-    width: 70%;
-  }
 
-  .portfolio-page__hero {
-    padding-top: 180px;
-
-  }
 
 }
 
