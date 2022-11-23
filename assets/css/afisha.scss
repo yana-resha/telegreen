@@ -1,0 +1,570 @@
+@import './keyframes.scss';
+@import './mixin';
+@import './sales.scss';
+@import './portfolio.scss';
+@import './blog.scss';
+@import './style.scss';
+
+.afisha {
+  background-color: $font-color-white;
+  padding-top: 55px;
+  padding-bottom: 50px;
+
+  .afisha__container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .afisha__main-title {
+    font-size: 40px;
+    border-bottom: 1px solid $font-color-dark-grey;
+    margin: 0;
+    padding: 0;
+    padding-bottom: 10px;
+    margin-bottom: 35px;
+    align-self: center;
+  }
+
+  .afisha__category-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    margin-bottom: 30px;
+  }
+
+  .afisha__category-part {
+    outline: none;
+    border: none;
+    background-color: transparent;
+    padding: 0;
+    cursor: pointer;
+    font-size: 12px;
+    color: $font-color-dark-grey;
+    font-family: 'monserrat';
+    font-weight: 400;
+    transition: color 0.3s ease-in-out;
+
+    // &:hover {
+    //   color: rgba($font-color-green, $alpha: 0.8);
+    // }
+
+    // &:focus {
+    //   color: rgba($font-color-green, $alpha: 0.8);
+    // }
+
+    // &:active {
+    //   color: rgba($font-color-green, $alpha: 1);
+    // }
+  }
+
+  .server-content {
+    text-align: center;
+  }
+
+  .afisha__category-part.filter {
+    color: rgba($font-color-green, $alpha: 1);
+  }
+
+  .afisha__search-container {
+    display: grid;
+    grid-template-columns: 40% 60%;
+    margin-bottom: 30px;
+    justify-content: space-between;
+  }
+
+  .afisha__search-form-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: stretch;
+  }
+
+  .afisha__search-btn {
+    outline: none;
+    border: none;
+    cursor: pointer;
+    color: $font-color-white;
+    background-color: $btn-green;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    transition: background-color 0.3s ease-in-out;
+
+    &:hover {
+      background-color: rgba($color: $btn-green, $alpha: 0.8);
+    }
+
+    &:focus {
+      background-color: rgba($color: $btn-green, $alpha: 0.8);
+    }
+
+    &:active {
+      background-color: $btn-grey;
+    }
+  }
+
+  .afisha__search-input {
+    outline: none;
+    border: none;
+    width: 100%;
+    background-color: #f7f7f7;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 12px;
+    font-family: 'monserrat';
+  }
+
+  .afisha__calendar-title {
+    font-size: 24px;
+    font-weight: 600;
+    color: $font-color-dark-grey;
+  }
+
+  .afisha__calendar-swiper {
+    width: 100%;
+    margin-bottom: 40px;
+  }
+
+  .afisha__calendar-slider {
+    position: relative;
+    width: auto;
+  }
+
+  .afisha__period-container {
+    display: grid;
+    grid-template-columns: 100%;
+  }
+
+  .afisha__days-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
+
+  .afisha__day-td {
+    width: 100%;
+    padding-left: 10px;
+    padding-right: 10px;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+  }
+
+  .afisha__day-td.filter {
+    background-color: green;
+    .afisha__day {
+      color: white!important;
+     }
+
+    .afisha__weekName {
+      color: white!important;
+    }
+  }
+
+  .afisha__day {
+    font-size: 24px;
+    font-weight: 600;
+    color: #343433;
+    text-align: center;
+    transition: color 0.3s ease-in-out;
+  }
+
+  .afisha__weekName {
+    font-size: 12px;
+    font-weight: 400;
+    color: #343433;
+    text-align: center;
+    transition: color 0.3s ease-in-out;
+  }
+
+  .afisha__month-container {
+    position: sticky;
+    left: 50%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .afisha__month {
+    font-size: 14px;
+    font-weight: 400;
+    color: #343433;
+  }
+
+  .afisha__day-td.output {
+
+    .afisha__day {
+      color: red;
+    }
+    .afisha__weekName {
+      color: red;
+    }
+  }
+
+  .afisha__list {
+    display: grid;
+    grid-template-columns: 23% 23% 23% 23%;
+    grid-row-gap: 60px;
+    justify-content: space-between;
+  }
+
+  .afisha__list-part-img-block {
+    width: 100%;
+    height: 410px;
+    margin-bottom: 15px;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: fill;
+    }
+  }
+
+  .afisha__list-part {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .afisha__list-part-content-block {
+    height: 100%;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .afisha__list-part-text-bold {
+    font-weight: 600;
+    font-size: 26px;
+    margin-bottom: 20px;
+    color: $font-color-dark-grey;
+  }
+
+  .afisha__list-part-text-bold div {
+    text-align: center;
+  }
+
+  .afisha__list-part-text {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .afisha__list-part-event-name {
+    font-size: 18px;
+    font-weight: 400;
+    color: $font-color-dark-grey;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .afisha__list-part-category {
+    margin-bottom: 20px;
+  }
+
+  .afisha__list-part-btn {
+    color: $font-color-white;
+    font-size: 21px;
+    white-space: nowrap;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 40px;
+    padding-right: 40px;
+    background-color: $btn-green;
+    outline: none;
+    border: none;
+    align-self: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+
+    &:hover {
+      background-color: rgba($color: $btn-green, $alpha: 0.8);
+    }
+
+    &:focus {
+      background-color: rgba($color: $btn-green, $alpha: 0.8);
+    }
+
+    &:active {
+      background-color: $btn-grey;
+    }
+  }
+
+}
+
+
+@media (max-width: 1024px) {
+
+  .afisha .afisha__list-part-img-block {
+    height: 300px;
+  }
+
+  .afisha .afisha__list-part-text-bold {
+    font-weight: 600;
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #3c434d;
+  }
+
+  .afisha .afisha__list-part-category {
+    margin-bottom: 10px;
+  } 
+
+  .afisha .afisha__list-part-event-name {
+    font-size: 16px;
+  }
+
+  .afisha .afisha__list-part-btn {
+    font-size: 18px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+  
+  .afisha .afisha__main-title {
+    font-size: 35px;
+    padding-bottom: 10px;
+  }
+
+  .afisha {
+    padding-top: 45px;
+  }
+
+}
+
+@media (max-width: 900px) { 
+  .afisha .afisha__list {
+    grid-template-columns: 30% 30% 30%;
+  }
+
+  .afisha {
+    padding-top: 35px;
+}
+
+}
+
+@media (max-width: 800px) {
+
+  .afisha .afisha__calendar-title {
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+  }
+
+  .afisha .afisha__day {
+    font-size: 22px;
+  }
+
+  .afisha .afisha__main-title {
+    font-size: 30px;
+    padding-bottom: 5px;
+    margin-bottom: 25px;
+  }
+
+
+}
+
+@media (max-width: 700px) {
+
+  .afisha .afisha__day-td {
+    padding-right: 12px;
+    padding-left: 12px;
+  }
+
+  .afisha .afisha__day {
+    font-size: 20px;
+  }
+
+  .afisha .afisha__list {
+    grid-template-columns: 32% 32% 32%;
+  }  
+
+  .afisha .afisha__list-part-text-bold {
+    font-size: 18px;
+  }
+
+  .afisha .afisha__list-part-event-name {
+    font-size: 14px;
+  }
+
+  .afisha .afisha__list-part-btn {
+    font-size: 16px;
+  }
+
+  .afisha .afisha__search-container {
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 630px) {
+
+  .afisha {
+    padding-top: 20px;
+  }
+
+  .afisha .afisha__main-title {
+    font-size: 25px;
+  }
+
+  .afisha .afisha__calendar-title {
+    font-size: 18px;
+  }
+
+  .afisha .afisha__day {
+    font-size: 18px;
+  }
+
+  .afisha .afisha__month {
+    font-size: 12px;
+  }
+
+  .afisha .afisha__list-part-img-block {
+    height: 250px;
+  }  
+
+
+  .afisha .afisha__list-part-btn {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+    font-size: 14px;
+  }
+
+  .afisha .afisha__month-container {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+}
+
+@media (max-width: 600px) {
+
+  .afisha .afisha__search-container {
+    grid-template-columns: 100%;
+    grid-row-gap: 20px;
+  }
+
+  .afisha__calendar-title {
+    grid-row-start: 2;
+  }
+
+  .afisha .afisha__calendar-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+
+ }
+
+ @media (max-width: 550px) { 
+
+  .afisha .afisha__list-part-text-bold {
+    font-size: 16px;
+  }
+
+  .afisha .afisha__list-part-event-name {
+    font-size: 12px;
+  }
+
+  .afisha .afisha__list-part-img-block {
+    height: 210px;
+  } 
+
+  // .afisha .afisha__list {
+  //   grid-template-columns: 45% 45%;
+  // }
+}
+
+@media (max-width: 500px) {
+
+  .afisha .afisha__category-container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-row-gap: 5px;
+    justify-content: space-between;
+  
+  }
+
+  .afisha .afisha__category-part {
+    padding-left: 5px;
+    padding-right: 5px;
+    text-align: start;
+  }
+
+  .afisha .afisha__list {
+    grid-template-columns: 45% 45%;
+  }
+
+  .afisha .afisha__list-part-img-block {
+    height: 250px;
+    margin-bottom: 10px;
+  }
+
+  .afisha .afisha__category-container {
+    margin-bottom: 20px;
+  }
+
+}
+
+@media (max-width: 470px) {
+
+  .afisha .afisha__category-container {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .afisha .afisha__search-container {
+    margin-bottom: 10px;
+  }  
+
+  .afisha .afisha__list {
+    grid-row-gap: 30px;
+  }
+}
+
+@media (max-width: 425px) {
+
+  .afisha .afisha__list-part-event-name {
+    margin-bottom: 5px;
+  }
+
+  .afisha .afisha__calendar-swiper {
+    margin-bottom: 20px;
+}
+
+
+
+  .afisha .afisha__list-part-img-block {
+    height: 220px;
+  }
+
+
+  .afisha .afisha__day {
+    font-size: 16px;
+  }
+
+ }
+
+ @media (max-width: 396px) {
+
+
+  .afisha .afisha__category-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .afisha .afisha__main-title {
+    margin-bottom: 20px;
+  }
+
+}
+
+
+@media (max-width: 350px) {
+
+  .afisha .afisha__list {
+    grid-template-columns: 48% 48%;
+  }
+}

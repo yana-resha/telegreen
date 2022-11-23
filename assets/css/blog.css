@@ -1114,6 +1114,12 @@
   font-weight: 500;
   font-style: normal;
 }
+.text-danger {
+  font-size: 14px;
+  margin-bottom: 10px;
+  color: #fefefe;
+}
+
 .theatre .st0 {
   fill: #010202;
 }
@@ -2656,7 +2662,7 @@ body {
   font-size: 24px;
 }
 .important__form-input {
-  background-color: #fefefe;
+  background-color: #fefefe !important;
   padding: 10px 20px;
   margin-bottom: 20px;
   outline: none;
@@ -2667,18 +2673,21 @@ body {
   color: #3c434d;
 }
 .important__form-input::-moz-placeholder {
+  background-color: #fefefe !important;
   font-family: "monserrat";
   font-size: 14px;
   font-weight: 400;
   color: #3c434d;
 }
 .important__form-input:-ms-input-placeholder {
+  background-color: #fefefe !important;
   font-family: "monserrat";
   font-size: 14px;
   font-weight: 400;
   color: #3c434d;
 }
 .important__form-input::placeholder {
+  background-color: #fefefe !important;
   font-family: "monserrat";
   font-size: 14px;
   font-weight: 400;
@@ -3365,7 +3374,10 @@ body {
     bottom: 270px;
   }
   .scroll-to-top {
-    right: 0px;
+    font-size: 40px;
+    right: 10px;
+    padding: 0;
+    margin: 0;
   }
   .hero__title {
     font-size: 30px;
@@ -3645,12 +3657,23 @@ body {
   .blog__list-part-content-link {
     font-size: 12px;
   }
+  .blog__btn {
+    font-size: 14px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  .important {
+    padding-top: 15px;
+    padding-bottom: 30px;
+  }
   .important__title {
     font-size: 16px;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
   }
   .important__description {
-    font-size: 12px;
+    font-size: 13px;
     font-weight: 400;
     line-height: 16px;
     text-align: start;
@@ -5294,6 +5317,12 @@ body {
   font-weight: 500;
   font-style: normal;
 }
+.text-danger {
+  font-size: 14px;
+  margin-bottom: 10px;
+  color: #fefefe;
+}
+
 .theatre .st0 {
   fill: #010202;
 }
@@ -6836,7 +6865,7 @@ body {
   font-size: 24px;
 }
 .important__form-input {
-  background-color: #fefefe;
+  background-color: #fefefe !important;
   padding: 10px 20px;
   margin-bottom: 20px;
   outline: none;
@@ -6847,18 +6876,21 @@ body {
   color: #3c434d;
 }
 .important__form-input::-moz-placeholder {
+  background-color: #fefefe !important;
   font-family: "monserrat";
   font-size: 14px;
   font-weight: 400;
   color: #3c434d;
 }
 .important__form-input:-ms-input-placeholder {
+  background-color: #fefefe !important;
   font-family: "monserrat";
   font-size: 14px;
   font-weight: 400;
   color: #3c434d;
 }
 .important__form-input::placeholder {
+  background-color: #fefefe !important;
   font-family: "monserrat";
   font-size: 14px;
   font-weight: 400;
@@ -7545,7 +7577,10 @@ body {
     bottom: 270px;
   }
   .scroll-to-top {
-    right: 0px;
+    font-size: 40px;
+    right: 10px;
+    padding: 0;
+    margin: 0;
   }
   .hero__title {
     font-size: 30px;
@@ -7825,12 +7860,23 @@ body {
   .blog__list-part-content-link {
     font-size: 12px;
   }
+  .blog__btn {
+    font-size: 14px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  .important {
+    padding-top: 15px;
+    padding-bottom: 30px;
+  }
   .important__title {
     font-size: 16px;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
   }
   .important__description {
-    font-size: 12px;
+    font-size: 13px;
     font-weight: 400;
     line-height: 16px;
     text-align: start;
@@ -9072,6 +9118,12 @@ body {
   font-weight: 500;
   font-style: normal;
 }
+.text-danger {
+  font-size: 14px;
+  margin-bottom: 10px;
+  color: #fefefe;
+}
+
 .theatre .st0 {
   fill: #010202;
 }
@@ -10614,7 +10666,7 @@ body {
   font-size: 24px;
 }
 .important__form-input {
-  background-color: #fefefe;
+  background-color: #fefefe !important;
   padding: 10px 20px;
   margin-bottom: 20px;
   outline: none;
@@ -10625,18 +10677,21 @@ body {
   color: #3c434d;
 }
 .important__form-input::-moz-placeholder {
+  background-color: #fefefe !important;
   font-family: "monserrat";
   font-size: 14px;
   font-weight: 400;
   color: #3c434d;
 }
 .important__form-input:-ms-input-placeholder {
+  background-color: #fefefe !important;
   font-family: "monserrat";
   font-size: 14px;
   font-weight: 400;
   color: #3c434d;
 }
 .important__form-input::placeholder {
+  background-color: #fefefe !important;
   font-family: "monserrat";
   font-size: 14px;
   font-weight: 400;
@@ -11323,7 +11378,10 @@ body {
     bottom: 270px;
   }
   .scroll-to-top {
-    right: 0px;
+    font-size: 40px;
+    right: 10px;
+    padding: 0;
+    margin: 0;
   }
   .hero__title {
     font-size: 30px;
@@ -11603,12 +11661,23 @@ body {
   .blog__list-part-content-link {
     font-size: 12px;
   }
+  .blog__btn {
+    font-size: 14px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  .important {
+    padding-top: 15px;
+    padding-bottom: 30px;
+  }
   .important__title {
     font-size: 16px;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
   }
   .important__description {
-    font-size: 12px;
+    font-size: 13px;
     font-weight: 400;
     line-height: 16px;
     text-align: start;
@@ -13252,6 +13321,12 @@ body {
   font-weight: 500;
   font-style: normal;
 }
+.text-danger {
+  font-size: 14px;
+  margin-bottom: 10px;
+  color: #fefefe;
+}
+
 .theatre .st0 {
   fill: #010202;
 }
@@ -14794,7 +14869,7 @@ body {
   font-size: 24px;
 }
 .important__form-input {
-  background-color: #fefefe;
+  background-color: #fefefe !important;
   padding: 10px 20px;
   margin-bottom: 20px;
   outline: none;
@@ -14805,18 +14880,21 @@ body {
   color: #3c434d;
 }
 .important__form-input::-moz-placeholder {
+  background-color: #fefefe !important;
   font-family: "monserrat";
   font-size: 14px;
   font-weight: 400;
   color: #3c434d;
 }
 .important__form-input:-ms-input-placeholder {
+  background-color: #fefefe !important;
   font-family: "monserrat";
   font-size: 14px;
   font-weight: 400;
   color: #3c434d;
 }
 .important__form-input::placeholder {
+  background-color: #fefefe !important;
   font-family: "monserrat";
   font-size: 14px;
   font-weight: 400;
@@ -15503,7 +15581,10 @@ body {
     bottom: 270px;
   }
   .scroll-to-top {
-    right: 0px;
+    font-size: 40px;
+    right: 10px;
+    padding: 0;
+    margin: 0;
   }
   .hero__title {
     font-size: 30px;
@@ -15783,12 +15864,23 @@ body {
   .blog__list-part-content-link {
     font-size: 12px;
   }
+  .blog__btn {
+    font-size: 14px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  .important {
+    padding-top: 15px;
+    padding-bottom: 30px;
+  }
   .important__title {
     font-size: 16px;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
   }
   .important__description {
-    font-size: 12px;
+    font-size: 13px;
     font-weight: 400;
     line-height: 16px;
     text-align: start;
@@ -16337,6 +16429,15 @@ body {
   line-height: 19px;
 }
 
+.portfolio-page__project-swiper-pagination .swiper-pagination-bullet {
+  background: white !important;
+  opacity: 0.5;
+}
+.portfolio-page__project-swiper-pagination .swiper-pagination-bullet-active {
+  background: white !important;
+  opacity: 0.8;
+}
+
 .portfolio__description-block-img .portfolio__desc-swiper {
   width: 100%;
   height: 420px;
@@ -16548,7 +16649,7 @@ body {
     height: 300px;
   }
   .portfolio-page-swiper {
-    height: 650px;
+    height: 600px;
   }
 }
 .blog-page {
